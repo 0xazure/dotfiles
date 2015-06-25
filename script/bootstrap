@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd)
+
+OS="$(uname -s)"
+
+_is_missing () {
+  ! hash "$1" 2>/dev/null
+}
+
+_write_out () {
+  local in_len=${#1}
+  local len=$((in_len + 4))
+
+  printf "\n"
+  printf '%*s' "$len" | tr ' ' "="
+  printf "\n‖ $1 ‖\n"
+  printf '%*s' "$len" | tr ' ' "="
+  printf "\n\n"
+}
+
+_brew_install () {
+  if _is_missing brew
+  then
+    printf "Missing executable \`brew\`, exiting...\n"
+    exit 1
+  fi
+
+  brew install "$1"
+}
+
+_check_status () {
+  if [[ $1 -ne 0 ]]
+  then
+    exit $1
+  fi
+}
+
+# Ensure we have necessary dependencies
+if [[ $OS == "Darwin" ]]
+then
+  if _is_missing brew
+  then
+    _write_out "Homebrew is not installed, installing..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    _check_status $?
+  fi
+
+  # Set $PATH to use brewed versions instead of system ones
+  export PATH=/usr/local/bin:$PATH
+
+  if _is_missing git
+  then
+    _write_out "git is not installed, installing..."
+    _brew_install "git"
+    _check_status $?
+  fi
+
+  if _is_missing python2
+  then
+    _write_out "Python2 is not installed, installing..."
+    _brew_install "python"
+    _check_status $?
+    pip install --upgrade pip setuptools
+    _check_status $?
+  fi
+
+  if _is_missing ansible
+  then
+    _write_out "Ansible is not installed, installing..."
+    pip install ansible
+    _check_status $?
+  fi
+
+  _write_out "Dependencies installed.  All done"
+else
+  printf "This is an unsupported OS identified as $OS.\n"
+fi
+

@@ -1,0 +1,19 @@
+---
+
+# git
+gitignore_global_src: "{{ dotfiles_dir }}/git/.gitignore_global"
+gitignore_global_dest: "{{ home }}/.gitignore_global"
+gitconfig_src: "gitconfig.j2"
+gitconfig_dest: "{{ home }}/.gitconfig"
+
+# zsh
+zsh_files:
+  zprofile:
+    src: "{{ dotfiles_dir }}/zsh/zprofile.zsh"
+    dest: "{{ home }}/.zprofile"
+  zshenv:
+    src: "{{ dotfiles_dir }}/zsh/zshenv.zsh"
+    dest: "{{ home }}/.zshenv"
+  zshrc:
+    src: "{{ dotfiles_dir }}/zsh/zshrc.zsh"
+    dest: "{{ home }}/.zshrc"

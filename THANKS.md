@@ -1,0 +1,9 @@
+- Blanc, Michel ([github](https://github.com/leucos))
+  - [Laying out roles, inventories and playbooks](https://leucos.github.io/ansible-files-layout/)
+- Holman, Zach ([github](https://github.com/holman))
+  - personal [dotfiles](https://github.com/holman/dotfiles) for inspiration
+  - [Dotfiles are Meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
+- Jaouen, Daniel ([github](https://github.com/danieljaouen))
+  - [How I Fully Automated OS X Provisioning With Ansible](http://il.luminat.us/blog/2014/04/19/how-i-fully-automated-os-x-with-ansible/)
+- Rupp, Tim ([github](https://github.com/caphrim007))
+  - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)

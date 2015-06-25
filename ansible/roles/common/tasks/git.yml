@@ -1,0 +1,60 @@
+---
+
+- name: backup | stat .gitignore_global
+  stat: >
+    path="{{ gitignore_global_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: gitignore_global_stat
+  tags:
+    - git
+    - backup
+
+- name: backup | back up existing .gitignore_global
+  command: >
+    mv "{{ gitignore_global_dest }}" "{{ gitignore_global_dest }}-{{ bck_stamp }}"
+    removes="{{ gitignore_global_dest }}"
+  when: gitignore_global_stat.stat.exists
+  tags:
+    - git
+    - backup
+
+- name: git | link .gitignore_global
+  file: >
+    src="{{ gitignore_global_src }}"
+    dest="{{ gitignore_global_dest }}"
+    state=link
+    force=no
+  tags:
+    - git
+    - link
+
+- name: backup | stat .gitconfig
+  stat: >
+    path="{{ gitconfig_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: gitconfig_stat
+  tags:
+    - git
+    - backup
+
+- name: backup | back up existing .gitconfig
+  command: >
+    mv "{{ gitconfig_dest }}" "{{ gitconfig_dest }}-{{ bck_stamp }}"
+    removes="{{ gitconfig_dest }}"
+  when: gitconfig_stat.stat.exists
+  tags:
+    - git
+    - backup
+
+- name: git | generate .gitconfig
+  template: >
+    src="{{ gitconfig_src }}"
+    dest="{{ gitconfig_dest }}"
+    force=no
+  tags:
+    - git
+    - copy

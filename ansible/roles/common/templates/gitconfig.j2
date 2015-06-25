@@ -1,0 +1,20 @@
+[user]
+	name = {{ user_name | default(ansible_env['USER']) }}
+	email = {{ user_email }}
+[core]
+	excludesfile = ~/.gitignore_global
+[push]
+	default = matching
+[credential]
+	helper = GIT_CREDENTIAL_HELPER
+[alias]
+	branches = branch -a
+	remotes = remote -v
+	stashes = stash list
+[color]
+	ui = 1
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+	autoupdate = true

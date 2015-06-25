@@ -1,0 +1,35 @@
+---
+
+# Homebrew
+homebrew_exec: "/usr/local/bin/brew"
+homebrew_taps:
+  - caskroom/cask
+  - caskroom/versions
+homebrew_brews:
+  - name: brew-cask
+  - name: editorconfig
+  - name: git
+    options: with-brewed-openssl
+  - name: postgresql
+  - name: python
+  - name: ruby
+  - name: screenfetch
+  - name: sqlite
+  - name: tree
+  - name: unrar
+  - name: zsh
+homebrew_casks:
+  - alfred
+  - android-file-transfer
+  - dropbox
+  - firefox
+  - google-chrome
+  - google-drive
+  - iterm2
+  - keepassx
+  - skype
+  - slack
+  - sourcetree
+  - spectacle
+  - virtualbox
+  - vlc
