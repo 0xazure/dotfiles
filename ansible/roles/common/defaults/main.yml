@@ -6,6 +6,10 @@ gitignore_global_dest: "{{ home }}/.gitignore_global"
 gitconfig_src: "gitconfig.j2"
 gitconfig_dest: "{{ home }}/.gitconfig"
 
+# nvm
+nvm_src: "{{ dotfiles_dir }}/nodejs/nvm"
+nvm_dest: "{{ home }}/.nvm"
+
 # zsh
 zsh_files:
   zprofile:

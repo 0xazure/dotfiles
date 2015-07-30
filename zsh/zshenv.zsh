@@ -16,3 +16,6 @@ export LANG=en_CA.UTF-8
 # Set the default editor
 export EDITOR=vim
 export VISUAL=vim
+
+# nvm config
+export NVM_DIR=$HOME/.nvm

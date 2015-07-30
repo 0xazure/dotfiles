@@ -23,3 +23,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Load aliases
 source $DOT/zsh/aliases.zsh
+
+# Source nvm for Node.js version management
+source $HOME/.nvm/nvm.sh
