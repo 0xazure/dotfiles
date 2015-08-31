@@ -16,6 +16,7 @@ homebrew_brews:
   - name: ruby
   - name: screenfetch
   - name: sqlite
+  - name: tmux
   - name: tree
   - name: unrar
   - name: zsh

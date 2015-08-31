@@ -23,5 +23,9 @@ export LANG=en_CA.UTF-8
 export EDITOR=vim
 export VISUAL=vim
 
+# tmux
+# Don't autoset pane title
+export DISABLE_AUTO_TITLE=true
+
 # nvm config
 export NVM_DIR=$HOME/.nvm

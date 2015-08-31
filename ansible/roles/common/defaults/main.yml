@@ -27,6 +27,13 @@ ruby: "{{ dotfiles_dir }}/ruby"
 gemrc_src: "{{ ruby }}/gemrc.yml"
 gemrc_dest: "{{ home }}/.gemrc"
 
+# tmux
+tmux_src: "{{ dotfiles_dir }}/tmux"
+tmux_dest: "{{ home }}/.tmux"
+tmux_conf_src: "{{ tmux_src }}/tmux.conf"
+tmux_conf_dest: "{{ home }}/.tmux.conf"
+tpm: "{{ tmux_src }}/plugins/tpm"
+
 # zsh
 zsh_files:
   zprofile:

@@ -17,6 +17,7 @@ brew-cask
 git
 heroku
 rails
+tmux
 )
 
 source $ZSH/oh-my-zsh.sh

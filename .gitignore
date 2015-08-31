@@ -8,3 +8,7 @@ sublime/User/Package Control.user-ca-bundle
 sublime/User/Package Control.cache
 
 sublime/User/Color Highlighter
+
+# tmux
+tmux/plugins/*
+!tmux/plugins/tpm

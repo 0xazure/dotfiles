@@ -3,4 +3,5 @@
 - include: git.yml
 - include: nodejs.yml
 - include: ruby.yml
+- include: tmux.yml
 - include: zsh.yml

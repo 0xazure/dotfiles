@@ -17,3 +17,6 @@
 [submodule "ruby/rbenv-plugins/default-gems"]
 	path = ruby/rbenv-plugins/default-gems
 	url = https://github.com/sstephenson/rbenv-default-gems.git
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
