@@ -14,6 +14,10 @@ npmrc_dest: "{{ home }}/.npmrc"
 nvm_src: "{{ dotfiles_dir }}/nodejs/nvm"
 nvm_dest: "{{ home }}/.nvm"
 
+# ruby
+gemrc_src: "{{ dotfiles_dir }}/ruby/gemrc.yml"
+gemrc_dest: "{{ home }}/.gemrc"
+
 # zsh
 zsh_files:
   zprofile:

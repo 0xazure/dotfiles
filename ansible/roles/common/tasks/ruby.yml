@@ -1,0 +1,34 @@
+---
+
+- name: backup | stat .gemrc
+  stat: >
+    path="{{ gemrc_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: gemrc_stat
+  tags:
+    - ruby
+    - rubygems
+    - backup
+
+- name: backup | back up existing .gemrc
+  command: >
+    mv "{{ gemrc_dest }}" "{{ gemrc_dest }}-{{ bck_stamp }}"
+    removes="{{ gemrc_dest }}"
+  when: gemrc_stat.stat.exists
+  tags:
+    - ruby
+    - rubygems
+    - backup
+
+- name: ruby | link .gemrc
+  file: >
+    src="{{ gemrc_src }}"
+    dest="{{ gemrc_dest }}"
+    state=link
+    force=no
+  tags:
+    - ruby
+    - rubygems
+    - link
