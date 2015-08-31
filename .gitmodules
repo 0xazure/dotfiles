@@ -11,3 +11,6 @@
 [submodule "ruby/rbenv-plugins/ruby-build"]
 	path = ruby/rbenv-plugins/ruby-build
 	url = https://github.com/sstephenson/ruby-build.git
+[submodule "ruby/rbenv-plugins/communal-gems"]
+	path = ruby/rbenv-plugins/communal-gems
+	url = https://github.com/tpope/rbenv-communal-gems.git
