@@ -7,6 +7,7 @@ homebrew_taps:
   - caskroom/versions
 homebrew_brews:
   - name: brew-cask
+  - name: coreutils
   - name: editorconfig
   - name: git
     options: with-brewed-openssl

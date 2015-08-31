@@ -9,3 +9,5 @@
   - ["Vendor Everything" Still Applies](http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/)
 - Rupp, Tim ([github](https://github.com/caphrim007))
   - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)
+- Sorhus, Sindre ([github](https://github.com/sindresorhus))
+  - [How Not to `rm` Yourself](https://github.com/sindresorhus/guides/blob/master/how-not-to-rm-yourself.md)

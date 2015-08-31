@@ -10,6 +10,12 @@ ZSH_CUSTOM=$DOT/zsh/custom
 # PATH configuration
 export PATH=$DOT/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
+# Use coreutils instead of systemutils
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+
+# Use coreutils manfiles instead of system manfiles
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+
 # Set language environment
 export LANG=en_CA.UTF-8
 

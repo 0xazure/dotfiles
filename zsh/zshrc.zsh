@@ -21,6 +21,9 @@ rails
 
 source $ZSH/oh-my-zsh.sh
 
+# Ask before executing `rm folder/*`
+unsetopt RM_STAR_SILENT
+
 # Load aliases
 source $DOT/zsh/aliases.zsh
 
