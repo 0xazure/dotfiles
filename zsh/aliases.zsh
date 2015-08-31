@@ -14,3 +14,6 @@ alias bil='bi --local'
 alias bu='b update'
 alias be='b exec'
 alias binit="bi && echo 'vendor/ruby' >> .gitignore"
+
+# Gemrat
+alias gemrat='gemrat --no-install'
