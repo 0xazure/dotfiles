@@ -101,3 +101,42 @@
     - rbenv
     - rbenv-plugins
     - link
+
+- name: backup | stat .rbenv/default-gems
+  stat: >
+    path="{{ default_gems_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: default_gems_stat
+  tags:
+    - ruby
+    - rubygems
+    - rbenv
+    - rbenv-plugins
+    - backup
+
+- name: backup | back up existing .rbenv/default-gems
+  command: >
+    mv "{{ default_gems_dest }}" "{{ default_gems_dest }}-{{ bck_stamp }}"
+    removes="{{ default_gems_dest }}"
+  when: default_gems_stat.stat.exists
+  tags:
+    - ruby
+    - rubygems
+    - rbenv
+    - rbenv-plugins
+    - backup
+
+- name: ruby | link .rbenv/default-gems
+  file: >
+    src="{{ default_gems_src }}"
+    dest="{{ default_gems_dest }}"
+    state=link
+    force=no
+  tags:
+    - ruby
+    - rubygems
+    - rbenv
+    - rbenv-plugins
+    - link

@@ -14,3 +14,6 @@
 [submodule "ruby/rbenv-plugins/communal-gems"]
 	path = ruby/rbenv-plugins/communal-gems
 	url = https://github.com/tpope/rbenv-communal-gems.git
+[submodule "ruby/rbenv-plugins/default-gems"]
+	path = ruby/rbenv-plugins/default-gems
+	url = https://github.com/sstephenson/rbenv-default-gems.git
