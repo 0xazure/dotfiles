@@ -8,7 +8,7 @@ export ZSH=$DOT/zsh/oh-my-zsh
 ZSH_CUSTOM=$DOT/zsh/custom
 
 # PATH configuration
-export PATH=$DOT/bin:/usr/local/bin:$PATH
+export PATH=$DOT/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 # Set language environment
 export LANG=en_CA.UTF-8

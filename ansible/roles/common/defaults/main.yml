@@ -14,8 +14,15 @@ npmrc_dest: "{{ home }}/.npmrc"
 nvm_src: "{{ dotfiles_dir }}/nodejs/nvm"
 nvm_dest: "{{ home }}/.nvm"
 
+# rbenv
+rbenv_src: "{{ ruby }}/rbenv"
+rbenv_dest: "{{ home }}/.rbenv"
+rbenv_plugins_src: "{{ ruby }}/rbenv-plugins"
+rbenv_plugins_dest: "{{ rbenv_dest }}/plugins"
+
 # ruby
-gemrc_src: "{{ dotfiles_dir }}/ruby/gemrc.yml"
+ruby: "{{ dotfiles_dir }}/ruby"
+gemrc_src: "{{ ruby }}/gemrc.yml"
 gemrc_dest: "{{ home }}/.gemrc"
 
 # zsh

@@ -4,3 +4,10 @@
 [submodule "nodejs/nvm"]
 	path = nodejs/nvm
 	url = https://github.com/creationix/nvm.git
+[submodule "ruby/rbenv"]
+	path = ruby/rbenv
+	url = https://github.com/sstephenson/rbenv.git
+	ignore = dirty
+[submodule "ruby/rbenv-plugins/ruby-build"]
+	path = ruby/rbenv-plugins/ruby-build
+	url = https://github.com/sstephenson/ruby-build.git

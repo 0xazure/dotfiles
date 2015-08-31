@@ -26,3 +26,6 @@ source $DOT/zsh/aliases.zsh
 
 # Source nvm for Node.js version management
 source $HOME/.nvm/nvm.sh
+
+# Source rbenv for ruby version management
+eval "$(rbenv init -)"
