@@ -1,12 +1,18 @@
 - Blanc, Michel ([github](https://github.com/leucos))
   - [Laying out roles, inventories and playbooks](https://leucos.github.io/ansible-files-layout/)
+- Bos, Wes ([github](https://github.com/wesbos))
+  - [Sublime Text Power User - A Complete Guide](https://sublimetextbook.com/)
 - Holman, Zach ([github](https://github.com/holman))
   - personal [dotfiles](https://github.com/holman/dotfiles) for inspiration
   - [Dotfiles are Meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
 - Jaouen, Daniel ([github](https://github.com/danieljaouen))
   - [How I Fully Automated OS X Provisioning With Ansible](http://il.luminat.us/blog/2014/04/19/how-i-fully-automated-os-x-with-ansible/)
+- Kharkharov, Gadzhi ([github](https://github.com/kkga))
+  - [SpaceGray](https://github.com/kkga/spacegray) theme for SublimeText
 - McGeary, Ryan ([github](https://github.com/rmm5t))
   - ["Vendor Everything" Still Applies](http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/)
+- Pope, Tim ([github](https://github.com/tpope))
+  - [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 - Rupp, Tim ([github](https://github.com/caphrim007))
   - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)
 - Sorhus, Sindre ([github](https://github.com/sindresorhus))

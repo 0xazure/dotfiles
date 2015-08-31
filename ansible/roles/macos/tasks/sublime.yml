@@ -1,0 +1,52 @@
+---
+
+- name: sublime | ensure Sublime Text directory structure
+  file: >
+    dest="{{ item }}"
+    state=directory
+    follow=yes
+  with_items:
+    - "{{ subl }}/Packages"
+    - "{{ subl }}/Installed Packages"
+  tags:
+    - sublime
+
+- name: backup | stat Packages/User/
+  stat: >
+    path="{{ subl_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: subl_stat
+  tags:
+    - sublime
+    - backup
+
+- name: backup | back up existing Packages/User/
+  command: >
+    mv "{{ subl_dest }}" "{{ subl_dest }}-{{ bck_stamp }}"
+    removes="{{ subl_dest }}"
+  when: subl_stat.stat.exists
+  tags:
+    - sublime
+    - backup
+
+- name: sublime | link User/
+  file: >
+    src="{{ subl_src }}"
+    dest="{{ subl_dest }}"
+    state=link
+    force=no
+  tags:
+    - sublime
+    - link
+
+- name: sublime | install Package Control
+  get_url: >
+    url="{{ subl_packagecontrol_src }}"
+    dest="{{ subl_packagecontrol_dest }}"
+    force=no
+  tags:
+    - sublime
+    - packagecontrol
+    - install

@@ -1,3 +1,4 @@
 ---
 
 - include: homebrew.yml
+- include: sublime.yml

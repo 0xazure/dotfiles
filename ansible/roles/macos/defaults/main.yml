@@ -32,5 +32,15 @@ homebrew_casks:
   - slack
   - sourcetree
   - spectacle
+  - sublime-text3
   - virtualbox
   - vlc
+
+# Sublime Text
+subl: "{{ home }}/Library/Application Support/Sublime Text 3"
+subl_src: "{{ dotfiles_dir }}/sublime/User"
+subl_dest: "{{ subl }}/Packages/User"
+
+# Sublime Text Package Control
+subl_packagecontrol_src: "https://packagecontrol.io/Package%20Control.sublime-package"
+subl_packagecontrol_dest: "{{ subl }}/Installed Packages/Package Control.sublime-package"
