@@ -33,3 +33,8 @@ source $HOME/.nvm/nvm.sh
 
 # Source rbenv for ruby version management
 eval "$(rbenv init -)"
+
+# Source shell syntax highlighting
+if [[ -s /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
