@@ -1,0 +1,56 @@
+---
+
+- name: backup | stat .vimrc
+  stat: >
+    path="{{ vimrc_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: vimrc_stat
+  tags:
+    - vim
+    - backup
+
+- name: backup | back up existing .vimrc
+  command: >
+    mv "{{ vimrc_dest }}" "{{ vimrc_dest }}-{{ bck_stamp }}"
+    removes="{{ vimrc_dest }}"
+  when: vimrc_stat.stat.exists
+  tags:
+    - vim
+    - backup
+
+- name: vim | link .vimrc
+  file: >
+    src="{{ vimrc_src }}"
+    dest="{{ vimrc_dest }}"
+    state=link
+    force=no
+  tags:
+    - vim
+    - link
+
+- name: vim | ensure .vim/ directory structure
+  file: >
+    dest="{{ home }}/.vim/autoload"
+    state=directory
+    follow=yes
+  tags:
+    - vim
+
+- name: vim | install vim-plug
+  get_url: >
+    url="{{ vim_plug_src }}"
+    dest="{{ vim_plug_dest }}"
+    force=no
+  tags:
+    - vim
+    - vim-plug
+    - install
+
+- name: vim | install plugins
+  command: /usr/local/bin/vim +PlugInstall +qall
+  tags:
+    - vim
+    - vim-plug
+    - install

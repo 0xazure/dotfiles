@@ -1,0 +1,298 @@
+" vim:foldmethod=marker:foldlevel=0:foldenable
+
+"
+" 0xazure's .vimrc
+"
+
+" Plugins (vim-plug.vim) {{{
+call plug#begin('~/.vim/plugged')
+
+" Statusline
+Plug 'bling/vim-airline'
+
+" Show git diff in gutter
+Plug 'airblade/vim-gitgutter'
+" Git wrapper in vim
+Plug 'tpope/vim-fugitive'
+
+" Block comment/uncomment
+Plug 'tpope/vim-commentary'
+
+" EditorConfig plugin
+Plug 'editorconfig/editorconfig-vim'
+
+" Dragable visual blocks
+Plug 'shinokada/dragvisuals.vim'
+
+" File-tree explorer
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Front-end tag completion
+Plug 'mattn/emmet-vim'
+
+" Indentation guides
+Plug 'Yggdroot/indentLine'
+
+" Colour schemes
+Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+"                         │            │      └─ Repo subdirectory
+"                         │            └──────── Add to runtime path
+"                         └───────────────────── Colourscheme
+
+" Languages
+" GitHub-flavoured markdown
+Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
+
+" Add closing end* to ruby,viml,bash,vb,cpp,lua
+Plug 'tpope/vim-endwise'
+
+call plug#end()
+" }}}
+
+" General Config {{{
+" Be iMproved
+set nocompatible
+
+if has('autocmd')
+    filetype plugin indent on
+"               │     │    └──── Enable file type detection
+"               │     └───────── Enable loading of indent file
+"               └─────────────── Enable loading of plugin files
+endif
+
+" Automatically reload changes from outside vim
+set autoread
+
+" Enable smoother redawing
+set ttyfast
+
+" Enable visual autocomplete for comand palette
+set wildmenu
+" Make autocomplete behave like shell completion
+set wildmode=list:longest
+
+" Intelligent case-sensitive search settings
+set ignorecase
+set smartcase
+
+" Sane buffer management
+set hidden
+
+" More natural pane splitting
+set splitright
+set splitbelow
+
+" Enable modelines
+set modeline
+" # of lines to search for modeline
+set modelines=2
+
+" Shorten mapping delays
+set timeoutlen=1000
+" Eliminate key code delays
+set ttimeoutlen=0
+" }}}
+
+" UI Config {{{
+" Show line numbers
+set ruler
+" Display absolute line number at cursor
+set number
+" Use relative line numbering
+set relativenumber
+
+" Display incomplete commands
+set showcmd
+
+" Enable syntax highlighting
+syntax enable
+" Limit syntax highlighting
+" This avoids very slow redrawing when files contain long lines
+set synmaxcol=2500
+
+" Highlight current line
+set cursorline
+" Highlight certain column(s)
+set colorcolumn=73
+
+" Vertical padding around cursor
+set scrolloff=5
+
+" Disable beeping and window flashing
+" http://vim.wikia.com/wiki/Disable_beeping
+set visualbell
+set noerrorbells
+set t_vb=
+
+" Enable searching while typing
+set incsearch
+" Highlight all search matches
+set hlsearch
+
+" Fold based on indent
+set foldmethod=indent
+" Deepest fold is 3 levels
+set foldnestmax=3
+" Don't fold by default
+set nofoldenable
+
+" Display invisible characters
+set list listchars=tab:——,eol:¬,trail:·
+
+" Enable full-colour support
+set t_Co=256
+
+" Use dark colour schemes
+set background=dark
+" Set colour scheme
+silent! colorscheme tomorrow-night
+" }}}
+
+" Plugin Configuration {{{
+
+" plugin:airblade/vim-gitgutter {{{
+" Always show sign column
+let g:gitgutter_sign_column_always=1
+" }}}
+
+" plugin:bling/vim-airline {{{
+" Auto-populate dictionary with correct glyphs
+let g:airline_powerline_fonts=1
+
+" Fix vim-airline not appearing
+set laststatus=2
+
+" Enable list of buffers
+let g:airline#extensions#tabline#enabled=1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod=':t'
+
+" Show buffer index
+let g:airline#extensions#tabline#buffer_idx_mode=1
+" }}}
+
+" plugin:shinokada/dragvisuals.vim {{{
+" Remove introduced trailing whitespace after moving
+let g:DVB_TrimWS=1
+" }}}
+
+" }}}
+
+" File Encoding {{{
+" Use UTF-8 as default encoding
+set encoding=utf8
+" Use Unix as the default file type
+set ffs=unix,dos,mac
+" }}}
+
+" History & Undo {{{
+" Enable persistent undo
+set undofile
+" Increase command history
+set history=5000
+" Increase undo levels
+set undolevels=1000
+" Number of lines to save for undo
+set undoreload=10000
+" Where to save undo histories
+set undodir=~/.vim/undo
+
+" Where to save `*.swp` files
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+
+" Don't create backups for certain files
+set backupskip=/tmp/*
+set backupskip+=/private/tmp/*
+" }}}
+
+" Indentation {{{
+" Retain indentation on next line
+set autoindent
+" }}}
+
+" Keybindings {{{
+" Make backspace behave in a sane manner
+set backspace=indent,eol,start
+
+" Better command leader
+nnoremap ; :
+
+" Better personal leader
+let mapleader=","
+
+" Leader commands {{{
+" Clear highlighting from last search
+nnoremap <silent> <leader><space> :nohlsearch<CR>
+" }}}
+
+" jk smash for ESC
+inoremap jk <ESC>
+inoremap kj <ESC>
+
+" Better navigation between wrapped lines
+" Move by screen line instead of by file line
+nmap j gj
+nmap k gk
+vmap j gj
+vmap k gk
+
+" Plugin Keybindings {{{
+
+" plugin:bling/vim-airline {{{
+" Select buffer corresponding to <leader>#
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+" }}}
+
+" plugin:scrooloose/nerdtree {{{
+ map <C-n> :NERDTreeToggle<CR>
+" }}}
+
+" plugin:shinokada/dragvisuals.vim {{{
+vmap <expr> <Up> DVB_Drag('up')
+vmap <expr> <Down> DVB_Drag('down')
+vmap <expr> <Left> DVB_Drag('left')
+vmap <expr> <Right> DVB_Drag('right')
+vmap <expr> D DVB_Duplicate()
+" }}}
+
+" }}}
+
+" }}}
+
+" Automatic Commands {{{
+" http://learnvimscriptthehardway.stevelosh.com/chapters/14.html
+if has('autocmd')
+
+" augroup * {{{
+    " Auto-save file when leaving Insert mode
+    augroup all_files
+        autocmd!
+        autocmd InsertLeave * if expand('%') != '' | update | endif
+    augroup END
+" }}}
+
+" augroup markdown {{{
+    " Use vim-flavored-markdown for markdown files by default
+    " Requires jtratner/vim-flavored-markdown
+    augroup markdown
+        autocmd!
+        autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+    augroup END
+" }}}
+
+endif
+" }}}
+
+" Load local settings if they exist
+if filereadable(glob('~/.vimrc.local'))
+    source ~/.vimrc.local
+endif

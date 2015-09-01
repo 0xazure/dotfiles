@@ -19,6 +19,7 @@ homebrew_brews:
   - name: tmux
   - name: tree
   - name: unrar
+  - name: vim
   - name: zsh
 homebrew_casks:
   - alfred
