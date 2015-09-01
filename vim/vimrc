@@ -39,6 +39,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Vim wrapper for `ag`, the Silver Searcher
 Plug 'rking/ag.vim'
 
+" Seamless navigation between tmux panes and vim splits
+Plug 'christoomey/vim-tmux-navigator'
+
 " Colour schemes
 Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 "                         │            │      └─ Repo subdirectory
@@ -175,6 +178,11 @@ let g:airline#extensions#tabline#fnamemod=':t'
 
 " Show buffer index
 let g:airline#extensions#tabline#buffer_idx_mode=1
+" }}}
+
+" plugin:christoomey/vim-tmux-navigator {{{
+" Execute `update` on leaving vim for a tmux pane
+let g:tmux_navigator_save_on_switch = 1
 " }}}
 
 " plugin:ctrlpvim/ctrlp.vim {{{
