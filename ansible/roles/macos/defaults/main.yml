@@ -6,6 +6,7 @@ homebrew_taps:
   - caskroom/cask
   - caskroom/versions
 homebrew_brews:
+  - name: ag
   - name: brew-cask
   - name: coreutils
   - name: editorconfig
