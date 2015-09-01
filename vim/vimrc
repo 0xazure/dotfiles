@@ -49,6 +49,9 @@ Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 "                         └───────────────────── Colourscheme
 
 " Languages
+" A solid general language pack
+Plug 'sheerun/vim-polyglot'
+
 " GitHub-flavoured markdown
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
 
