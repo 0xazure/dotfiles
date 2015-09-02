@@ -23,6 +23,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Dragable visual blocks
 Plug 'shinokada/dragvisuals.vim'
+" Visually select increasingly larger regions of text
+Plug 'terryma/vim-expand-region'
 
 " File-tree explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -322,6 +324,11 @@ nmap <leader>6 <Plug>AirlineSelectTab6
 nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
+" }}}
+
+" plugin:terryma/vim-expand-region {{{
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 " }}}
 
 " plugin:scrooloose/nerdtree {{{

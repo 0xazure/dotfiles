@@ -33,3 +33,5 @@
   - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)
 - Sorhus, Sindre ([github](https://github.com/sindresorhus))
   - [How Not to `rm` Yourself](https://github.com/sindresorhus/guides/blob/master/how-not-to-rm-yourself.md)
+- Stankiewicz, Adam ([github](https://github.com/sheerun))
+  - [How to boost your Vim productivity](http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/)
