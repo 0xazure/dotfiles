@@ -1,5 +1,5 @@
 # Set name of the theme to load
-ZSH_THEME="0xazure"
+ZSH_THEME="pure"
 
 # Disable oh-my-zsh auto update
 DISABLE_AUTO_UPDATE=true
