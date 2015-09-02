@@ -42,6 +42,15 @@ Plug 'rking/ag.vim'
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 
+" Autocompletion
+" Interactive command execution in vim
+" Shougo/neocomplete.vim dependency
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+" Syntax source for Shougo/neocomplete.vim
+Plug 'Shougo/neco-syntax'
+" Next-generation completion framework
+Plug 'Shougo/neocomplete.vim'
+
 " Colour schemes
 Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 "                         │            │      └─ Repo subdirectory
@@ -228,6 +237,17 @@ let g:ag_working_path_mode='r'
 let g:DVB_TrimWS=1
 " }}}
 
+" plugin:shougo/neocomplete.vim {{{
+" Use neocomplete
+let g:neocomplete#enable_at_startup=1
+
+" Use smartcase
+let g:neocomplete#enable_smart_case=1
+
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length=3
+" }}}
+
 " }}}
 
 " File Encoding {{{
@@ -314,6 +334,11 @@ vmap <expr> <Down> DVB_Drag('down')
 vmap <expr> <Left> DVB_Drag('left')
 vmap <expr> <Right> DVB_Drag('right')
 vmap <expr> D DVB_Duplicate()
+" }}}
+
+" plugin:shougo/neocomplete.vim {{{
+" <TAB> completion
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " }}}
 
 " }}}
