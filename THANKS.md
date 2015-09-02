@@ -29,6 +29,8 @@
   - ["Vendor Everything" Still Applies](http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/)
 - Pope, Tim ([github](https://github.com/tpope))
   - [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+- Pot, Evert ([github](https://github.com/evert))
+  - [Making the clipboard work between iTerm2, tmux, vim, and OS X](http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/)
 - Rupp, Tim ([github](https://github.com/caphrim007))
   - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)
 - Sorhus, Sindre ([github](https://github.com/sindresorhus))

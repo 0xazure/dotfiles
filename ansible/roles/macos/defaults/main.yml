@@ -14,6 +14,7 @@ homebrew_brews:
     options: with-brewed-openssl
   - name: postgresql
   - name: python
+  - name: reattach-to-user-namespace
   - name: ruby
   - name: screenfetch
   - name: sqlite
