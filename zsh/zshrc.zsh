@@ -34,6 +34,11 @@ source $HOME/.nvm/nvm.sh
 # Source rbenv for ruby version management
 eval "$(rbenv init -)"
 
+# Source gvm for go version and GOPATH management
+if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then
+  source $HOME/.gvm/scripts/gvm
+fi
+
 # Source shell syntax highlighting
 if [[ -s /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
