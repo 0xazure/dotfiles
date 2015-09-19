@@ -195,6 +195,10 @@ let g:airline#extensions#tabline#fnamemod=':t'
 
 " Show buffer index
 let g:airline#extensions#tabline#buffer_idx_mode=1
+
+" Use algo optimized for tabs for indentation and spaces for alignment
+" See :help airline-whitespace
+let g:airline#extensions#whitespace#mixed_indent_algo=2
 " }}}
 
 " plugin:christoomey/vim-tmux-navigator {{{
