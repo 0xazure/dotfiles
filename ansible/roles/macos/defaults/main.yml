@@ -28,6 +28,7 @@ homebrew_brews:
 homebrew_casks:
   - alfred
   - android-file-transfer
+  - dockertoolbox
   - dropbox
   - firefox
   - google-chrome
