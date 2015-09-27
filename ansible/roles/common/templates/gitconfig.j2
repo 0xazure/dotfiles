@@ -11,6 +11,7 @@
 	branches = branch -a
 	remotes = remote -v
 	stashes = stash list
+	pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
 [color]
 	ui = 1
 [pull]
