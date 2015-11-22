@@ -10,10 +10,6 @@ gitconfig_dest: "{{ home }}/.gitconfig"
 npmrc_src: "npmrc.j2"
 npmrc_dest: "{{ home }}/.npmrc"
 
-# nvm
-nvm_src: "{{ dotfiles_dir }}/nodejs/nvm"
-nvm_dest: "{{ home }}/.nvm"
-
 # rbenv
 rbenv_src: "{{ ruby }}/rbenv"
 rbenv_dest: "{{ home }}/.rbenv"

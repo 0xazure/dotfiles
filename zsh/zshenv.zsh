@@ -28,4 +28,4 @@ export VISUAL=vim
 export DISABLE_AUTO_TITLE=true
 
 # nvm config
-export NVM_DIR=$HOME/.nvm
+export NVM_DIR=$DOT/nodejs/nvm

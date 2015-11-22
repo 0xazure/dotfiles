@@ -1,38 +1,5 @@
 ---
 
-- name: backup | stat .nvm/
-  stat: >
-    path="{{ nvm_dest }}"
-    follow=no
-    get_checksum=no
-    get_md5=no
-  register: nvm_stat
-  tags:
-    - nodejs
-    - nvm
-    - backup
-
-- name: backup | back up existing .nvm/
-  command: >
-    mv "{{ nvm_dest }}" "{{ nvm_dest }}-{{ bck_stamp }}"
-    removes="{{ nvm_dest }}"
-  when: nvm_stat.stat.exists
-  tags:
-    - nodejs
-    - nvm
-    - backup
-
-- name: nodejs | link .nvm/
-  file: >
-    src="{{ nvm_src }}"
-    dest="{{ nvm_dest }}"
-    state=link
-    force=no
-  tags:
-    - nodejs
-    - nvm
-    - link
-
 - name: backup | stat .npmrc
   stat: >
     path="{{ npmrc_dest }}"
