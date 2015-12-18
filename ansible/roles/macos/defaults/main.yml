@@ -5,6 +5,7 @@ homebrew_exec: "/usr/local/bin/brew"
 homebrew_taps:
   - caskroom/cask
   - caskroom/versions
+  - homebrew/dupes
 homebrew_brews:
   - name: ag
   - name: brew-cask
@@ -15,6 +16,7 @@ homebrew_brews:
   - name: postgresql
   - name: python
   - name: reattach-to-user-namespace
+  - name: rsync
   - name: ruby
   - name: screenfetch
   - name: sqlite
