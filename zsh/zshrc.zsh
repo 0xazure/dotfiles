@@ -27,6 +27,9 @@ source $ZSH/oh-my-zsh.sh
 # Ask before executing `rm folder/*`
 unsetopt RM_STAR_SILENT
 
+# Don't store commands prefixed with a space in history
+set HIST_IGNORE_SPACE
+
 # Load aliases
 source $DOT/zsh/aliases.zsh
 
