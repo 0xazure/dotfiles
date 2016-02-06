@@ -8,7 +8,6 @@ homebrew_taps:
   - homebrew/dupes
 homebrew_brews:
   - name: ag
-  - name: brew-cask
   - name: coreutils
   - name: editorconfig
   - name: git
