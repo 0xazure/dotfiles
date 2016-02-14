@@ -4,7 +4,7 @@ alias ohmyzsh="$EDITOR $ZSH"
 alias dotfiles="$EDITOR $DOT"
 
 # Shell
-alias ls='ls -AFG --color=auto'
+alias ls='ls -AFG --color=auto --quoting-style=escape'
 alias ll='ls -A1'
 
 # Bundler
