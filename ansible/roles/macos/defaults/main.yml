@@ -12,6 +12,7 @@ homebrew_brews:
   - name: editorconfig
   - name: git
     options: with-brewed-openssl
+  - name: hg
   - name: postgresql
   - name: python
   - name: reattach-to-user-namespace
