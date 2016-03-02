@@ -26,9 +26,6 @@ Plug 'shinokada/dragvisuals.vim'
 " Visually select increasingly larger regions of text
 Plug 'terryma/vim-expand-region'
 
-" File-tree explorer
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
 " Front-end tag completion
 Plug 'mattn/emmet-vim'
 
@@ -336,10 +333,6 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 " plugin:terryma/vim-expand-region {{{
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
-" }}}
-
-" plugin:scrooloose/nerdtree {{{
- map <C-n> :NERDTreeToggle<CR>
 " }}}
 
 " plugin:shinokada/dragvisuals.vim {{{
