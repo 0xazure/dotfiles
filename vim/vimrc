@@ -7,64 +7,71 @@
 " Plugins (vim-plug.vim) {{{
 call plug#begin('~/.vim/plugged')
 
-" Statusline
-Plug 'bling/vim-airline'
-
+" General Plugins {{{
 " Show git diff in gutter
 Plug 'airblade/vim-gitgutter'
-" Git wrapper in vim
-Plug 'tpope/vim-fugitive'
 
-" Block comment/uncomment
-Plug 'tpope/vim-commentary'
-
-" EditorConfig plugin
-Plug 'editorconfig/editorconfig-vim'
-
-" Dragable visual blocks
-Plug 'shinokada/dragvisuals.vim'
-" Visually select increasingly larger regions of text
-Plug 'terryma/vim-expand-region'
-
-" Front-end tag completion
-Plug 'mattn/emmet-vim'
-
-" Indentation guides
-Plug 'Yggdroot/indentLine'
-
-" Fuzzy everything finder
-Plug 'ctrlpvim/ctrlp.vim'
-
-" Vim wrapper for `ag`, the Silver Searcher
-Plug 'rking/ag.vim'
+" Statusline
+Plug 'bling/vim-airline'
 
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 
-" Autocompletion
-" Interactive command execution in vim
-" Shougo/neocomplete.vim dependency
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+" Fuzzy everything finder
+Plug 'ctrlpvim/ctrlp.vim'
+
+" EditorConfig plugin
+Plug 'editorconfig/editorconfig-vim'
+
+" Front-end tag completion
+Plug 'mattn/emmet-vim'
+
+" Vim wrapper for `ag`, the Silver Searcher
+Plug 'rking/ag.vim'
+
+" Visually select increasingly larger regions of text
+Plug 'terryma/vim-expand-region'
+
+" Block comment/uncomment
+Plug 'tpope/vim-commentary'
+
+" Git wrapper in vim
+Plug 'tpope/vim-fugitive'
+
+" Dragable visual blocks
+Plug 'shinokada/dragvisuals.vim'
+
 " Syntax source for Shougo/neocomplete.vim
 Plug 'Shougo/neco-syntax'
+
 " Next-generation completion framework
 Plug 'Shougo/neocomplete.vim'
 
-" Colour schemes
+" Shougo/neocomplete.vim dependency
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
+" Indentation guides
+Plug 'Yggdroot/indentLine'
+" }}}
+
+" Colour schemes {{{
 Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 "                         │            │      └─ Repo subdirectory
 "                         │            └──────── Add to runtime path
 "                         └───────────────────── Colourscheme
+" }}}
 
-" Languages
+" Language-enhancing Plugins {{{
+" GitHub-flavoured markdown highlighting
+Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
+
 " A solid general language pack
 Plug 'sheerun/vim-polyglot'
 
-" GitHub-flavoured markdown
-Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
-
 " Add closing end* to ruby,viml,bash,vb,cpp,lua
 Plug 'tpope/vim-endwise'
+
+" }}}
 
 call plug#end()
 " }}}
@@ -293,17 +300,6 @@ set autoindent
 " Make backspace behave in a sane manner
 set backspace=indent,eol,start
 
-" Better command leader
-nnoremap ; :
-
-" Better personal leader
-let mapleader=","
-
-" Leader commands {{{
-" Clear highlighting from last search
-nnoremap <silent> <leader><space> :nohlsearch<CR>
-" }}}
-
 " jk smash for ESC
 inoremap jk <ESC>
 inoremap kj <ESC>
@@ -314,6 +310,17 @@ nmap j gj
 nmap k gk
 vmap j gj
 vmap k gk
+
+" Better command leader
+nnoremap ; :
+
+" Better personal leader
+let mapleader=","
+
+" Leader commands {{{
+" Clear highlighting from last search
+nnoremap <silent> <leader><space> :nohlsearch<CR>
+" }}}
 
 " Plugin Keybindings {{{
 
