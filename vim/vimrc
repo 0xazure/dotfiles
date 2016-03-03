@@ -11,9 +11,6 @@ call plug#begin('~/.vim/plugged')
 " Show git diff in gutter
 Plug 'airblade/vim-gitgutter'
 
-" Statusline
-Plug 'bling/vim-airline'
-
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -49,6 +46,12 @@ Plug 'Shougo/neocomplete.vim'
 
 " Shougo/neocomplete.vim dependency
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
+" Statusline
+Plug 'vim-airline/vim-airline'
+
+" Statusline themes
+Plug 'vim-airline/vim-airline-themes'
 
 " Indentation guides
 Plug 'Yggdroot/indentLine'
@@ -185,26 +188,6 @@ silent! colorscheme tomorrow-night
 let g:gitgutter_sign_column_always=1
 " }}}
 
-" plugin:bling/vim-airline {{{
-" Auto-populate dictionary with correct glyphs
-let g:airline_powerline_fonts=1
-
-" Fix vim-airline not appearing
-set laststatus=2
-
-" Enable list of buffers
-let g:airline#extensions#tabline#enabled=1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod=':t'
-
-" Show buffer index
-let g:airline#extensions#tabline#buffer_idx_mode=1
-
-" Use algo optimized for tabs for indentation and spaces for alignment
-" See :help airline-whitespace
-let g:airline#extensions#whitespace#mixed_indent_algo=2
-" }}}
-
 " plugin:christoomey/vim-tmux-navigator {{{
 " Execute `update` on leaving vim for a tmux pane
 let g:tmux_navigator_save_on_switch = 1
@@ -259,6 +242,26 @@ let g:neocomplete#enable_smart_case=1
 
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length=3
+" }}}
+
+" plugin:vim-airline/vim-airline {{{
+" Auto-populate dictionary with correct glyphs
+let g:airline_powerline_fonts=1
+
+" Fix vim-airline not appearing
+set laststatus=2
+
+" Enable list of buffers
+let g:airline#extensions#tabline#enabled=1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod=':t'
+
+" Show buffer index
+let g:airline#extensions#tabline#buffer_idx_mode=1
+
+" Use algo optimized for tabs for indentation and spaces for alignment
+" See :help airline-whitespace
+let g:airline#extensions#whitespace#mixed_indent_algo=2
 " }}}
 
 " }}}
@@ -324,19 +327,6 @@ nnoremap <silent> <leader><space> :nohlsearch<CR>
 
 " Plugin Keybindings {{{
 
-" plugin:bling/vim-airline {{{
-" Select buffer corresponding to <leader>#
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-" }}}
-
 " plugin:terryma/vim-expand-region {{{
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
@@ -353,6 +343,19 @@ vmap <expr> D DVB_Duplicate()
 " plugin:shougo/neocomplete.vim {{{
 " <TAB> completion
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" }}}
+
+" plugin:vim-airline/vim-airline {{{
+" Select buffer corresponding to <leader>#
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
 " }}}
 
 " }}}
