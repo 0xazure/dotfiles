@@ -1,5 +1,6 @@
 ---
 
+- include: emacs.yml
 - include: git.yml
 - include: nodejs.yml
 - include: ruby.yml
