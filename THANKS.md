@@ -6,6 +6,7 @@
   - [Laying out roles, inventories and playbooks](https://leucos.github.io/ansible-files-layout/)
 - Bos, Wes ([github](https://github.com/wesbos))
   - [Sublime Text Power User - A Complete Guide](https://sublimetextbook.com/)
+  - [Visually list directories with `tree`](https://twitter.com/wesbos/status/601426471240998912)
 - Conway, Damian([www](http://damian.conway.org/))
   - [More Instantly Better Vim (OSCON 2013)](https://www.youtube.com/watch?v=aHm36-na4-4)
   - well-documented [vim setup](https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup)

@@ -17,3 +17,8 @@ alias binit="bi && echo 'vendor/ruby' >> .gitignore"
 
 # Gemrat
 alias gemrat='gemrat --no-install'
+
+# tree
+function t() {
+  tree -I '.git|node_modules|vendor|.DS_Store' --dirsfirst --filelimit 15 -L ${1:-3} -aC $2
+}
