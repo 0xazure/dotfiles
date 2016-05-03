@@ -29,3 +29,7 @@ export DISABLE_AUTO_TITLE=true
 
 # nvm config
 export NVM_DIR=$DOT/nodejs/nvm
+
+# golang config
+export GOPATH=$HOME/golang
+export PATH=$GOPATH/bin:$PATH

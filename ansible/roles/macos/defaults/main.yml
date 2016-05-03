@@ -15,6 +15,7 @@ homebrew_brews:
     options: with-spacemacs-icon
   - name: git
     options: with-brewed-openssl
+  - name: go
   - name: hg
   - name: postgresql
   - name: python
