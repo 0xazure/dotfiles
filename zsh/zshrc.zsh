@@ -39,11 +39,6 @@ source $NVM_DIR/nvm.sh
 # Source rbenv for ruby version management
 eval "$(rbenv init -)"
 
-# Source gvm for go version and GOPATH management
-if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then
-  source $HOME/.gvm/scripts/gvm
-fi
-
 # Source docker-machine for docker in the shell
 if [[ $(docker-machine status default | grep 'Running') ]]; then
   eval "$(docker-machine env default)"
