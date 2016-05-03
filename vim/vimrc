@@ -223,6 +223,10 @@ else
 endif
 " }}}
 
+" plugin:faith/vim-go {{{
+let g:go_fmt_command="goimports"
+" }}}
+
 " plugin:rking/ag.vim {{{
 " Search from project root instead of cwd
 let g:ag_working_path_mode='r'
