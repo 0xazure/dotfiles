@@ -41,6 +41,7 @@ export DISABLE_AUTO_TITLE=true
 
 # golang
 export GOPATH=$HOME/golang
+mkdir -p $GOPATH
 export PATH=$GOPATH/bin:$PATH
 
 # nvm
