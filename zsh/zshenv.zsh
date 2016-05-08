@@ -8,7 +8,7 @@ export ZSH=$DOT/zsh/oh-my-zsh
 ZSH_CUSTOM=$DOT/zsh/custom
 
 # PATH configuration
-export PATH=$DOT/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH
+export PATH=$DOT/bin:$HOME/.rbenv/bin:$PATH
 
 # Use coreutils instead of systemutils
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
