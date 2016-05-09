@@ -27,14 +27,13 @@ ZSH_THEME="pure"
 # oh-my-zsh
 [[ -s $ZSH/oh-my-zsh.sh ]] && . $ZSH/oh-my-zsh.sh
 
-# Ask before executing `rm folder/*`
-unsetopt RM_STAR_SILENT
-
-# Don't store commands prefixed with a space in history
-set HIST_IGNORE_SPACE
-
 # Load aliases
 [[ -s $DOT/zsh/aliases.zsh ]] && . $DOT/zsh/aliases.zsh
+
+# Ask before executing `rm folder/*`
+unsetopt RM_STAR_SILENT
+# Don't store commands prefixed with a space in history
+set HIST_IGNORE_SPACE
 
 # tmux
 ## Don't autoset pane title
@@ -46,14 +45,13 @@ mkdir -p $GOPATH
 export PATH=$GOPATH/bin:$PATH
 
 # nvm
-## Source nvm for Node.js version management
 export NVM_DIR=$DOT/nodejs/nvm
 [[ -s $NVM_DIR/nvm.sh ]] && . $NVM_DIR/nvm.sh
 
-# Source rbenv for ruby version management
+# rbenv
 eval "$(rbenv init -)"
 
-# Source docker-machine for docker in the shell
+# docker & docker-machine
 if [[ $(docker-machine status default | grep 'Running') ]]; then
   eval "$(docker-machine env default)"
 fi
