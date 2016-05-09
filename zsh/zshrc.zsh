@@ -24,7 +24,8 @@ tmux
 # Set name of the prompt theme to load
 ZSH_THEME="pure"
 
-source $ZSH/oh-my-zsh.sh
+# oh-my-zsh
+[[ -s $ZSH/oh-my-zsh.sh ]] && . $ZSH/oh-my-zsh.sh
 
 # Ask before executing `rm folder/*`
 unsetopt RM_STAR_SILENT
@@ -33,7 +34,7 @@ unsetopt RM_STAR_SILENT
 set HIST_IGNORE_SPACE
 
 # Load aliases
-source $DOT/zsh/aliases.zsh
+[[ -s $DOT/zsh/aliases.zsh ]] && . $DOT/zsh/aliases.zsh
 
 # tmux
 ## Don't autoset pane title
@@ -47,7 +48,7 @@ export PATH=$GOPATH/bin:$PATH
 # nvm
 ## Source nvm for Node.js version management
 export NVM_DIR=$DOT/nodejs/nvm
-source $NVM_DIR/nvm.sh
+[[ -s $NVM_DIR/nvm.sh ]] && . $NVM_DIR/nvm.sh
 
 # Source rbenv for ruby version management
 eval "$(rbenv init -)"
