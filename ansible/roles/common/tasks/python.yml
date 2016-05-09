@@ -37,9 +37,7 @@
   pip: >
     name="{{ item }}"
     state=latest
-  with_items:
-    - pip
-    - setuptools
+  with_items: "{{ python_packages }}"
   tags:
     - python
     - pip

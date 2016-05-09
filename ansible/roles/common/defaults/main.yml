@@ -20,6 +20,13 @@ pyenv_dest: "{{ home }}/.pyenv"
 
 # python
 python: "{{ dotfiles_dir }}/python"
+python_packages:
+    - pip
+    - setuptools
+    - stevedore
+    - virtualenv
+    - virtualenv-clone
+    - virtualenvwrapper
 
 # rbenv
 rbenv_src: "{{ ruby }}/rbenv"

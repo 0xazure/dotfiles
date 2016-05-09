@@ -55,6 +55,11 @@ eval "$(rbenv init -)"
 export PYENV_ROOT=$DOT/python/pyenv
 eval "$(pyenv init -)"
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/devel
+[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
+
 # docker & docker-machine
 if [[ $(docker-machine status default | grep 'Running') ]]; then
   eval "$(docker-machine env default)"
