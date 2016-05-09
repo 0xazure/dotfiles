@@ -51,6 +51,10 @@ export NVM_DIR=$DOT/nodejs/nvm
 # rbenv
 eval "$(rbenv init -)"
 
+# pyenv
+export PYENV_ROOT=$DOT/python/pyenv
+eval "$(pyenv init -)"
+
 # docker & docker-machine
 if [[ $(docker-machine status default | grep 'Running') ]]; then
   eval "$(docker-machine env default)"

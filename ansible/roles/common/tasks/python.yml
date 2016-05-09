@@ -1,0 +1,46 @@
+---
+
+- name: backup | stat .pyenv/
+  stat: >
+    path="{{ pyenv_dest }}"
+    follow=no
+    get_checksum=no
+    get_md5=no
+  register: pyenv_stat
+  tags:
+    - python
+    - pyenv
+    - backup
+
+- name: backup | back up existing .pyenv/
+  command: >
+    mv "{{ pyenv_dest }}" "{{ pyenv_dest}}-{{ bck_stamp }}"
+    removes="{{ pyenv_dest }}"
+  when: pyenv_stat.stat.exists
+  tags:
+    - python
+    - pyenv
+    - backup
+
+- name: python | link .pyenv/
+  file: >
+    src="{{ pyenv_src }}"
+    dest="{{ pyenv_dest }}"
+    state=link
+    force=no
+  tags:
+    - python
+    - pyenv
+    - link
+
+- name: python | install default global packages
+  pip: >
+    name="{{ item }}"
+    state=latest
+  with_items:
+    - pip
+    - setuptools
+  tags:
+    - python
+    - pip
+    - install

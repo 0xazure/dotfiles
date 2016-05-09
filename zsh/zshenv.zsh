@@ -8,7 +8,7 @@ export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman
 
 # PATH configuration
-export PATH=$HOME/.rbenv/bin:$DOT/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$HOME/.pyenv/bin:$DOT/bin:$PATH
 
 # Set language environment
 export LANG=en_CA.UTF-8

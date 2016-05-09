@@ -14,6 +14,13 @@ gitconfig_dest: "{{ home }}/.gitconfig"
 npmrc_src: "npmrc.j2"
 npmrc_dest: "{{ home }}/.npmrc"
 
+# pyenv
+pyenv_src: "{{ python }}/pyenv"
+pyenv_dest: "{{ home }}/.pyenv"
+
+# python
+python: "{{ dotfiles_dir }}/python"
+
 # rbenv
 rbenv_src: "{{ ruby }}/rbenv"
 rbenv_dest: "{{ home }}/.rbenv"

@@ -23,3 +23,6 @@
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "python/pyenv"]
+	path = python/pyenv
+	url = https://github.com/yyuu/pyenv.git
