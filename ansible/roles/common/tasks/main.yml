@@ -1,6 +1,5 @@
 ---
 
-- include: emacs.yml
 - include: git.yml
 - include: nodejs.yml
 - include: python.yml

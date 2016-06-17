@@ -6,13 +6,10 @@ homebrew_taps:
   - caskroom/cask
   - caskroom/versions
   - homebrew/dupes
-  - railwaycat/emacsmacport
 homebrew_brews:
   - name: ag
   - name: coreutils
   - name: editorconfig
-  - name: emacs-mac
-    options: with-spacemacs-icon
   - name: git
     options: with-brewed-openssl
   - name: go

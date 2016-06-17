@@ -1,9 +1,5 @@
 ---
 
-# emacs
-spacemacs_src: "{{ dotfiles_dir }}/emacs/spacemacs.el"
-spacemacs_dest: "{{ home }}/.spacemacs"
-
 # git
 gitignore_global_src: "{{ dotfiles_dir }}/git/.gitignore_global"
 gitignore_global_dest: "{{ home }}/.gitignore_global"
