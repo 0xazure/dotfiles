@@ -19,6 +19,7 @@ homebrew_brews:
   - name: reattach-to-user-namespace
   - name: rsync
   - name: ruby
+  - name: rust
   - name: screenfetch
   - name: sqlite
   - name: tmux
