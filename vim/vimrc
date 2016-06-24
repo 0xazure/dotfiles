@@ -232,6 +232,11 @@ let g:go_fmt_command="goimports"
 let g:ag_working_path_mode='r'
 " }}}
 
+" plugin:rust-lang/rust.vim {{{
+" Automatically format rust files on save (if `rustfmt` is available)
+let g:rustfmt_autosave=1
+" }}}
+
 " plugin:shinokada/dragvisuals.vim {{{
 " Remove introduced trailing whitespace after moving
 let g:DVB_TrimWS=1

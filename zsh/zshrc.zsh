@@ -44,6 +44,9 @@ export GOPATH=$HOME/golang
 mkdir -p $GOPATH
 export PATH=$GOPATH/bin:$PATH
 
+# rust
+export PATH=$HOME/.cargo/bin:$PATH
+
 # nvm
 export NVM_DIR=$DOT/nodejs/nvm
 [[ -s $NVM_DIR/nvm.sh ]] && . $NVM_DIR/nvm.sh

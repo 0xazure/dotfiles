@@ -37,6 +37,11 @@ ruby: "{{ dotfiles_dir }}/ruby"
 gemrc_src: "{{ ruby }}/gemrc.yml"
 gemrc_dest: "{{ home }}/.gemrc"
 
+# rust
+rust_cargo_path: "{{ home }}/.cargo"
+rust_packages:
+  - rustfmt
+
 # tmux
 tmux_src: "{{ dotfiles_dir }}/tmux"
 tmux_dest: "{{ home }}/.tmux"

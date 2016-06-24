@@ -4,6 +4,7 @@
 - include: nodejs.yml
 - include: python.yml
 - include: ruby.yml
+- include: rust.yml
 - include: tmux.yml
 - include: vim.yml
 - include: zsh.yml
