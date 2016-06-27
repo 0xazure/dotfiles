@@ -7,7 +7,6 @@ homebrew_taps:
   - caskroom/versions
   - homebrew/dupes
 homebrew_brews:
-  - name: ag
   - name: coreutils
   - name: editorconfig
   - name: git
@@ -22,6 +21,7 @@ homebrew_brews:
   - name: rust
   - name: screenfetch
   - name: sqlite
+  - name: the_silver_searcher
   - name: tmux
   - name: tree
   - name: unrar
