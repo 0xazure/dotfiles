@@ -19,6 +19,7 @@ python: "{{ dotfiles_dir }}/python"
 python_packages:
     - pip
     - setuptools
+    - restview
     - stevedore
     - virtualenv
     - virtualenv-clone
