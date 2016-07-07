@@ -33,7 +33,7 @@ homebrew_casks:
   - alfred
   - android-file-transfer
   - discord
-  - dockertoolbox
+  - docker
   - dropbox
   - firefox
   - google-chrome
