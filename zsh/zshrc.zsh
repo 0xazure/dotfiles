@@ -46,6 +46,7 @@ export PATH=$GOPATH/bin:$PATH
 
 # rust
 export PATH=$HOME/.cargo/bin:$PATH
+[[ -x $HOME/.cargo/bin/racer ]] && export RUST_SRC_PATH=/usr/local/src/rust/src
 
 # nvm
 export NVM_DIR=$DOT/nodejs/nvm

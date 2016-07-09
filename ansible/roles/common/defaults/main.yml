@@ -39,8 +39,12 @@ gemrc_src: "{{ ruby }}/gemrc.yml"
 gemrc_dest: "{{ home }}/.gemrc"
 
 # rust
+rust_repo: "https://github.com/rust-lang/rust.git"
+rust_version: "1.10.0"
+rust_dest: "/usr/local/src/rust"
 rust_cargo_path: "{{ home }}/.cargo"
 rust_packages:
+  - racer
   - rustfmt
 
 # tmux

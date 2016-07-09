@@ -71,6 +71,9 @@ Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " GitHub-flavoured markdown highlighting
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
 
+" Rust code completion utility
+Plug 'racer-rust/vim-racer'
+
 " A solid general language pack
 Plug 'sheerun/vim-polyglot'
 
@@ -233,6 +236,11 @@ let g:go_fmt_command="goimports"
 " plugin:rking/ag.vim {{{
 " Search from project root instead of cwd
 let g:ag_working_path_mode='r'
+" }}}
+
+" plugin:racer-rust/vim-racer {{{
+" Show fuction signatures in autocompletion
+let g:racer_experimental_completer=1
 " }}}
 
 " plugin:rust-lang/rust.vim {{{
