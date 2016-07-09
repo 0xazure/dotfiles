@@ -35,6 +35,9 @@ Plug 'tpope/vim-commentary'
 " Git wrapper in vim
 Plug 'tpope/vim-fugitive'
 
+" Syntax checking
+Plug 'scrooloose/syntastic'
+
 " Dragable visual blocks
 Plug 'shinokada/dragvisuals.vim'
 
@@ -235,6 +238,19 @@ let g:ag_working_path_mode='r'
 " plugin:rust-lang/rust.vim {{{
 " Automatically format rust files on save (if `rustfmt` is available)
 let g:rustfmt_autosave=1
+" }}}
+
+" plugin:scrooloose/syntastic {{{
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Configure symbols & colours
+let g:syntastic_error_symbol='✘'
+highlight SyntasticErrorSign ctermbg=none ctermfg=red
+let g:syntastic_warning_symbol="▲"
+highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 " }}}
 
 " plugin:shinokada/dragvisuals.vim {{{
