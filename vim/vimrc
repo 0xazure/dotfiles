@@ -8,6 +8,9 @@
 call plug#begin('~/.vim/plugged')
 
 " General Plugins {{{
+" Open file under cursor
+Plug 'amix/open_file_under_cursor.vim'
+
 " Show git diff in gutter
 Plug 'airblade/vim-gitgutter'
 
