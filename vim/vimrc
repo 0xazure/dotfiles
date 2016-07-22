@@ -318,12 +318,23 @@ set history=5000
 set undolevels=1000
 " Number of lines to save for undo
 set undoreload=10000
-" Where to save undo histories
-set undodir=~/.vim/undo
 
+" Create undodir if it does not exist
+let s:my_undodir=expand("~/.vim/undo")
+if !isdirectory(s:my_undodir)
+  call mkdir(s:my_undodir, "p")
+endif
+" Where to save undo histories
+let &undodir=s:my_undodir
+
+" Create backupdir if it does not exist
+let s:my_backupdir=expand("~/.vim/backup")
+if !isdirectory(s:my_backupdir)
+  call mkdir(s:my_backupdir, "p")
+endif
 " Where to save `*.swp` files
-set backupdir=~/.vim/backup/
-set directory=~/.vim/backup/
+let &backupdir=s:my_backupdir
+let &directory=s:my_backupdir
 
 " Don't create backups for certain files
 set backupskip=/tmp/*
