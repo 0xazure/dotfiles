@@ -71,9 +71,6 @@ Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " }}}
 
 " Language-enhancing Plugins {{{
-" GitHub-flavoured markdown highlighting
-Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'ghmarkdown'] }
-
 " Rust code completion utility
 Plug 'racer-rust/vim-racer'
 
@@ -418,15 +415,6 @@ if has('autocmd')
     augroup all_files
         autocmd!
         autocmd InsertLeave * if expand('%') != '' | update | endif
-    augroup END
-" }}}
-
-" augroup markdown {{{
-    " Use vim-flavored-markdown for markdown files by default
-    " Requires jtratner/vim-flavored-markdown
-    augroup markdown
-        autocmd!
-        autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
     augroup END
 " }}}
 
