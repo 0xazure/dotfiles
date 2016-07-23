@@ -41,9 +41,6 @@ Plug 'tpope/vim-fugitive'
 " Syntax checking
 Plug 'scrooloose/syntastic'
 
-" Dragable visual blocks
-Plug 'shinokada/dragvisuals.vim'
-
 " Syntax source for Shougo/neocomplete.vim
 Plug 'Shougo/neco-syntax'
 
@@ -261,11 +258,6 @@ let g:syntastic_warning_symbol="▲"
 highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 " }}}
 
-" plugin:shinokada/dragvisuals.vim {{{
-" Remove introduced trailing whitespace after moving
-let g:DVB_TrimWS=1
-" }}}
-
 " plugin:shougo/neocomplete.vim {{{
 " Use neocomplete
 let g:neocomplete#enable_at_startup=1
@@ -374,14 +366,6 @@ nnoremap <silent> <leader><space> :nohlsearch<CR>
 " plugin:terryma/vim-expand-region {{{
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
-" }}}
-
-" plugin:shinokada/dragvisuals.vim {{{
-vmap <expr> <Up> DVB_Drag('up')
-vmap <expr> <Down> DVB_Drag('down')
-vmap <expr> <Left> DVB_Drag('left')
-vmap <expr> <Right> DVB_Drag('right')
-vmap <expr> D DVB_Duplicate()
 " }}}
 
 " plugin:shougo/neocomplete.vim {{{
