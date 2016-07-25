@@ -44,6 +44,7 @@ rust_version: "1.10.0"
 rust_dest: "/usr/local/src/rust"
 rust_cargo_path: "{{ home }}/.cargo"
 rust_packages:
+  - cargo-outdated
   - racer
   - rustfmt
 
