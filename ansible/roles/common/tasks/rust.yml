@@ -1,5 +1,14 @@
 ---
 
+- name: rust | install Rust
+  shell: "curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path"
+  #                                                  │        └─ don't modify PATH on install
+  #                                                  └─ non-interactive install
+  tags:
+    - rust
+    - rustup
+    - install
+
 - name: rust | gather installed package information
   stat: >
     path="{{ rust_cargo_path }}/bin/{{ item }}"
