@@ -1,5 +1,8 @@
 ---
 
+# general
+clone_dest: "/usr/local/src"
+
 # git
 gitignore_global_src: "{{ dotfiles_dir }}/git/.gitignore_global"
 gitignore_global_dest: "{{ home }}/.gitignore_global"
@@ -41,12 +44,15 @@ gemrc_dest: "{{ home }}/.gemrc"
 # rust
 rust_repo: "https://github.com/rust-lang/rust.git"
 rust_version: "1.10.0"
-rust_dest: "/usr/local/src/rust"
+rust_dest: "{{ clone_dest }}/rust"
 rust_cargo_path: "{{ home }}/.cargo"
 rust_packages:
+  - cargo-check
   - cargo-outdated
+  - cargo-watch
   - racer
   - rustfmt
+rust_dybuk_dest: "{{ clone_dest }}/dybuk"
 
 # tmux
 tmux_src: "{{ dotfiles_dir }}/tmux"
