@@ -181,7 +181,7 @@ set t_Co=256
 " Use dark colour schemes
 set background=dark
 " Set colour scheme
-silent! colorscheme tomorrow-night
+silent! colorscheme Tomorrow-Night
 " }}}
 
 " Plugin Configuration {{{
