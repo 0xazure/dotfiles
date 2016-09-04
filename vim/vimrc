@@ -41,14 +41,16 @@ Plug 'tpope/vim-fugitive'
 " Syntax checking
 Plug 'scrooloose/syntastic'
 
-" Syntax source for Shougo/neocomplete.vim
-Plug 'Shougo/neco-syntax'
+if has('lua')
+  " Next-generation completion framework
+  Plug 'Shougo/neocomplete.vim'
 
-" Next-generation completion framework
-Plug 'Shougo/neocomplete.vim'
+  " Syntax source for Shougo/neocomplete.vim
+  Plug 'Shougo/neco-syntax'
 
-" Shougo/neocomplete.vim dependency
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+  " Shougo/neocomplete.vim dependency
+  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+endif
 
 " Statusline
 Plug 'vim-airline/vim-airline'
