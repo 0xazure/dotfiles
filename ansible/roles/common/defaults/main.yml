@@ -52,7 +52,6 @@ rust_packages:
   - cargo-watch
   - racer
   - rustfmt
-rust_dybuk_dest: "{{ clone_dest }}/dybuk"
 
 # tmux
 tmux_src: "{{ dotfiles_dir }}/tmux"
