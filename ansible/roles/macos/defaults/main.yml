@@ -20,6 +20,7 @@ homebrew_brews:
   - name: ruby
   - name: screenfetch
   - name: sqlite
+  - name: ssh-copy-id
   - name: the_silver_searcher
   - name: tmux
   - name: tree
