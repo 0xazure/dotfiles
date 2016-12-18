@@ -48,10 +48,6 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 [[ -x $HOME/.cargo/bin/racer ]] && export RUST_SRC_PATH=/usr/local/src/rust/src
 
-# nvm
-export NVM_DIR=$DOT/nodejs/nvm
-[[ -s $NVM_DIR/nvm.sh ]] && . $NVM_DIR/nvm.sh
-
 # rbenv
 eval "$(rbenv init -)"
 

@@ -13,6 +13,7 @@ homebrew_brews:
     options: with-brewed-openssl
   - name: go
   - name: mercurial
+  - name: node@6
   - name: postgresql
   - name: python
   - name: reattach-to-user-namespace
