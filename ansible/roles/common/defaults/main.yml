@@ -43,7 +43,7 @@ gemrc_dest: "{{ home }}/.gemrc"
 
 # rust
 rust_repo: "https://github.com/rust-lang/rust.git"
-rust_version: "1.12.0"
+rust_version: "1.13.0"
 rust_dest: "{{ clone_dest }}/rust"
 rust_cargo_path: "{{ home }}/.cargo"
 rust_packages:
