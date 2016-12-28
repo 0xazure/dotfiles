@@ -43,6 +43,7 @@ rust_cargo_path: "{{ home }}/.cargo"
 rust_packages:
   - cargo-check
   - cargo-outdated
+  - cargo-update
   - cargo-watch
   - racer
   - rustfmt
