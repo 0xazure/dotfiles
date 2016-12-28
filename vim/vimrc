@@ -260,6 +260,10 @@ let g:syntastic_warning_symbol="▲"
 highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 " }}}
 
+" plugin:sheerun/vim-polyglot {{{
+let g:vim_markdown_conceal=0
+" }}}
+
 " plugin:shougo/neocomplete.vim {{{
 " Use neocomplete
 let g:neocomplete#enable_at_startup=1
