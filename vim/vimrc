@@ -73,6 +73,9 @@ Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " Rust code completion utility
 Plug 'racer-rust/vim-racer'
 
+" Official Rust plugin
+Plug 'rust-lang/rust.vim'
+
 " A solid general language pack
 Plug 'sheerun/vim-polyglot'
 
@@ -262,6 +265,7 @@ highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 
 " plugin:sheerun/vim-polyglot {{{
 let g:vim_markdown_conceal=0
+let g:polyglot_disabled=['rust']
 " }}}
 
 " plugin:shougo/neocomplete.vim {{{
