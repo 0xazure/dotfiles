@@ -297,6 +297,14 @@ let g:syntastic_error_symbol='✘'
 highlight SyntasticErrorSign ctermbg=none ctermfg=red
 let g:syntastic_warning_symbol="▲"
 highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
+
+" Specific checker settings
+let g:syntastic_javascript_checkers = ['eslint']
+
+" ESLint checking with sindresorhus/xo
+let g:syntastic_javascript_eslint_generic = 1
+let g:syntastic_javascript_eslint_exec = 'xo'
+let g:syntastic_javascript_eslint_args = '--reporter=compact'
 " }}}
 
 " }}}
