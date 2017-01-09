@@ -193,7 +193,7 @@ silent! colorscheme Tomorrow-Night
 
 " plugin:airblade/vim-gitgutter {{{
 " Always show sign column
-let g:gitgutter_sign_column_always=1
+let g:gitgutter_sign_column_always = 1
 " }}}
 
 " plugin:christoomey/vim-tmux-navigator {{{
@@ -205,85 +205,85 @@ let g:tmux_navigator_save_on_switch = 1
 " Use ag (the Silver Searcher) if available
 if executable('ag')
     " No max file limit
-    let g:ctrlp_max_files=0
+    let g:ctrlp_max_files = 0
 
     " Search from current directory instead of project root
-    let g:ctrlp_working_path_mode=0
+    let g:ctrlp_working_path_mode = 0
 
     " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching=0
+    let g:ctrlp_use_caching = 0
 
     " Use ag for file searching
-    let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " Otherwise use built-in CtrlP settings
 else
     " Show hidden files by default
-    let g:ctrlp_show_hidden=1
+    let g:ctrlp_show_hidden = 1
 
     " Ignore untracked files
-    let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+    let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
     " Set custom ignore rules
-    let g:ctrlp_custom_ignore={
+    let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git|hg|svn)$',
       \ }
 endif
 " }}}
 
 " plugin:faith/vim-go {{{
-let g:go_fmt_command="goimports"
+let g:go_fmt_command = "goimports"
 " }}}
 
 " plugin:rking/ag.vim {{{
 " Search from project root instead of cwd
-let g:ag_working_path_mode='r'
+let g:ag_working_path_mode = 'r'
 " }}}
 
 " plugin:racer-rust/vim-racer {{{
 " Show fuction signatures in autocompletion
-let g:racer_experimental_completer=1
+let g:racer_experimental_completer = 1
 " }}}
 
 " plugin:rust-lang/rust.vim {{{
 " Automatically format rust files on save (if `rustfmt` is available)
-let g:rustfmt_autosave=1
+let g:rustfmt_autosave = 1
 " }}}
 
 " plugin:sheerun/vim-polyglot {{{
-let g:vim_markdown_conceal=0
-let g:polyglot_disabled=['rust']
+let g:vim_markdown_conceal = 0
+let g:polyglot_disabled = ['rust']
 " }}}
 
 " plugin:shougo/neocomplete.vim {{{
 " Use neocomplete
-let g:neocomplete#enable_at_startup=1
+let g:neocomplete#enable_at_startup = 1
 
 " Use smartcase
-let g:neocomplete#enable_smart_case=1
+let g:neocomplete#enable_smart_case = 1
 
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length=3
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 " }}}
 
 " plugin:vim-airline/vim-airline {{{
 " Auto-populate dictionary with correct glyphs
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 1
 
 " Fix vim-airline not appearing
 set laststatus=2
 
 " Enable list of buffers
-let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
-let g:airline#extensions#tabline#fnamemod=':t'
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Show buffer index
-let g:airline#extensions#tabline#buffer_idx_mode=1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 " Use algo optimized for tabs for indentation and spaces for alignment
 " See :help airline-whitespace
-let g:airline#extensions#whitespace#mixed_indent_algo=2
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
 " }}}
 
 " plugin:vim-syntastic/syntastic {{{
@@ -293,9 +293,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Configure symbols & colours
-let g:syntastic_error_symbol='✘'
+let g:syntastic_error_symbol = '✘'
 highlight SyntasticErrorSign ctermbg=none ctermfg=red
-let g:syntastic_warning_symbol="▲"
+let g:syntastic_warning_symbol = "▲"
 highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 
 " Specific checker settings
@@ -327,21 +327,21 @@ set undolevels=1000
 set undoreload=10000
 
 " Create undodir if it does not exist
-let s:my_undodir=expand("~/.vim/undo")
+let s:my_undodir = expand("~/.vim/undo")
 if !isdirectory(s:my_undodir)
   call mkdir(s:my_undodir, "p")
 endif
 " Where to save undo histories
-let &undodir=s:my_undodir
+let &undodir = s:my_undodir
 
 " Create backupdir if it does not exist
-let s:my_backupdir=expand("~/.vim/backup")
+let s:my_backupdir = expand("~/.vim/backup")
 if !isdirectory(s:my_backupdir)
   call mkdir(s:my_backupdir, "p")
 endif
 " Where to save `*.swp` files
-let &backupdir=s:my_backupdir
-let &directory=s:my_backupdir
+let &backupdir = s:my_backupdir
+let &directory = s:my_backupdir
 
 " Don't create backups for certain files
 set backupskip=/tmp/*
@@ -372,7 +372,7 @@ vmap k gk
 nnoremap ; :
 
 " Better personal leader
-let mapleader=","
+let mapleader = ","
 
 " Leader commands {{{
 " Clear highlighting from last search
