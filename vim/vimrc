@@ -38,9 +38,6 @@ Plug 'tpope/vim-commentary'
 " Git wrapper in vim
 Plug 'tpope/vim-fugitive'
 
-" Syntax checking
-Plug 'scrooloose/syntastic'
-
 if has('lua')
   " Next-generation completion framework
   Plug 'Shougo/neocomplete.vim'
@@ -57,6 +54,9 @@ Plug 'vim-airline/vim-airline'
 
 " Statusline themes
 Plug 'vim-airline/vim-airline-themes'
+
+" Syntax checking
+Plug 'vim-syntastic/syntastic'
 
 " Indentation guides
 Plug 'Yggdroot/indentLine'
@@ -250,19 +250,6 @@ let g:racer_experimental_completer=1
 let g:rustfmt_autosave=1
 " }}}
 
-" plugin:scrooloose/syntastic {{{
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Configure symbols & colours
-let g:syntastic_error_symbol='✘'
-highlight SyntasticErrorSign ctermbg=none ctermfg=red
-let g:syntastic_warning_symbol="▲"
-highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
-" }}}
-
 " plugin:sheerun/vim-polyglot {{{
 let g:vim_markdown_conceal=0
 let g:polyglot_disabled=['rust']
@@ -297,6 +284,19 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 " Use algo optimized for tabs for indentation and spaces for alignment
 " See :help airline-whitespace
 let g:airline#extensions#whitespace#mixed_indent_algo=2
+" }}}
+
+" plugin:vim-syntastic/syntastic {{{
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Configure symbols & colours
+let g:syntastic_error_symbol='✘'
+highlight SyntasticErrorSign ctermbg=none ctermfg=red
+let g:syntastic_warning_symbol="▲"
+highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 " }}}
 
 " }}}
