@@ -79,6 +79,9 @@ Plug 'rust-lang/rust.vim'
 " A solid general language pack
 Plug 'sheerun/vim-polyglot'
 
+" Javascript linting with sindresorhus/xo
+Plug 'sindresorhus/vim-xo'
+
 " Add closing end* to ruby,viml,bash,vb,cpp,lua
 Plug 'tpope/vim-endwise'
 
@@ -299,12 +302,7 @@ let g:syntastic_warning_symbol = "▲"
 highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
 
 " Specific checker settings
-let g:syntastic_javascript_checkers = ['eslint']
-
-" ESLint checking with sindresorhus/xo
-let g:syntastic_javascript_eslint_generic = 1
-let g:syntastic_javascript_eslint_exec = 'xo'
-let g:syntastic_javascript_eslint_args = '--reporter=compact'
+let g:syntastic_javascript_checkers = ['xo']
 " }}}
 
 " }}}
