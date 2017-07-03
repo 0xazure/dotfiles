@@ -157,7 +157,7 @@ set synmaxcol=2500
 " Highlight current line
 set cursorline
 " Highlight certain column(s)
-set colorcolumn=73
+set colorcolumn=81
 
 " Vertical padding around cursor
 set scrolloff=5
@@ -415,6 +415,17 @@ if has('autocmd')
     augroup all_files
         autocmd!
         autocmd InsertLeave * if expand('%') != '' | update | endif
+    augroup END
+" }}}
+
+" augroup gitcommit {{{
+    augroup gitcommit
+        autocmd!
+        " New line after 72 characters in a commit message
+        autocmd FileType gitcommit set textwidth=72
+
+        " Also colour the 51st column (for titles - max 50 characters)
+        autocmd FileType gitcommit set colorcolumn+=51
     augroup END
 " }}}
 

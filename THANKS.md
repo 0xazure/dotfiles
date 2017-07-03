@@ -34,6 +34,8 @@
   - [Making the clipboard work between iTerm2, tmux, vim, and OS X](http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/)
 - Porteneuve, Christophe ([github](https://github.com/tdd))
   - [Getting solid at Git rebase vs. merge](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa)
+- Roberts, Harry ([github](https://github.com/csswizardry))
+  - [Configuring Git and Vim](https://csswizardry.com/2017/03/configuring-git-and-vim/#update-2017-04-09)
 - Rupp, Tim ([github](https://github.com/caphrim007))
   - [Understanding ansible tags](http://www.caphrim.net/ansible/2015/05/24/understanding-ansible-tags.html)
 - Sorhus, Sindre ([github](https://github.com/sindresorhus))
