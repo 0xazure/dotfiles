@@ -7,6 +7,7 @@ homebrew_taps:
   - caskroom/versions
   - homebrew/dupes
 homebrew_brews:
+  - name: cmake
   - name: coreutils
   - name: editorconfig
   - name: git
