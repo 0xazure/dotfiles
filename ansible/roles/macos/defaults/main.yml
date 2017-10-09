@@ -16,6 +16,8 @@ homebrew_brews:
   - name: mercurial
   - name: node@6
   - name: postgresql
+  - name: pyenv
+  - name: pyenv-virtualenvwrapper
   - name: python
   - name: reattach-to-user-namespace
   - name: rsync

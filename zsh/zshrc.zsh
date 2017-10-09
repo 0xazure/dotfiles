@@ -51,7 +51,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 eval "$(rbenv init -)"
 
 # pyenv
-export PYENV_ROOT=$DOT/python/pyenv
+export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 # virtualenvwrapper

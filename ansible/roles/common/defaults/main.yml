@@ -11,8 +11,7 @@ npmrc_src: "npmrc.j2"
 npmrc_dest: "{{ home }}/.npmrc"
 
 # pyenv
-pyenv_src: "{{ python }}/pyenv"
-pyenv_dest: "{{ home }}/.pyenv"
+pyenv: "{{ home }}/.pyenv"
 
 # python
 python: "{{ dotfiles_dir }}/python"
