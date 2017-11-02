@@ -159,9 +159,6 @@ set cursorline
 " Highlight certain column(s)
 set colorcolumn=81
 
-" Vertical padding around cursor
-set scrolloff=5
-
 " Disable beeping and window flashing
 " http://vim.wikia.com/wiki/Disable_beeping
 set visualbell
@@ -419,6 +416,12 @@ if has('autocmd')
     augroup all_files
         autocmd!
         autocmd InsertLeave * if expand('%') != '' | update | endif
+    augroup END
+
+    augroup vert_center_cursor
+      autocmd!
+      autocmd BufEnter,WinEnter,WinNew,VimResized *,*.*
+            \ let &scrolloff = winheight(win_getid()) / 2
     augroup END
 " }}}
 
