@@ -26,8 +26,8 @@ Plug 'editorconfig/editorconfig-vim'
 " Front-end tag completion
 Plug 'mattn/emmet-vim'
 
-" Vim wrapper for `ag`, the Silver Searcher
-Plug 'rking/ag.vim'
+" Search tool frontend for vim
+Plug 'mileszs/ack.vim'
 
 " Visually select increasingly larger regions of text
 Plug 'terryma/vim-expand-region'
@@ -239,9 +239,10 @@ endif
 let g:go_fmt_command = "goimports"
 " }}}
 
-" plugin:rking/ag.vim {{{
-" Search from project root instead of cwd
-let g:ag_working_path_mode = 'r'
+" plugin:mileszs/ack.vim {{{
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 " }}}
 
 " plugin:racer-rust/vim-racer {{{
