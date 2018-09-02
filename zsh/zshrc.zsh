@@ -1,5 +1,5 @@
 # Path to oh-my-zsh installation
-export ZSH=$DOT/zsh/oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 # Path to custom oh-my-zsh tweaks
 export ZSH_CUSTOM=$DOT/zsh/custom
 # Disable oh-my-zsh auto update
