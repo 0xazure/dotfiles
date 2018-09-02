@@ -12,6 +12,8 @@
   - well-documented [vim setup](https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup)
 - Davis, Josh ([github](https://github.com/jdavis))
   - [Vim Tab Madness. Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/)
+- Gjengset, Jon ([github](https://github.com/jonhoo))
+  - personal [dotfiles](https://github.com/jonhoo/configs) for inspiration
 - Hawthorne, John ([github](https://github.com/jhawthorn))
   - [Eliminating delays on ESC in vim and zsh](http://www.johnhawthorn.com/2012/09/vi-escape-delays/)
 - Holman, Zach ([github](https://github.com/holman))
