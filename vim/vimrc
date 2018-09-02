@@ -373,11 +373,6 @@ nnoremap ; :
 " Better personal leader
 let mapleader = "\<space>"
 
-" Leader commands {{{
-" Clear highlighting from last search
-nnoremap <silent> <leader><space> :nohlsearch<CR>
-" }}}
-
 " Plugin Keybindings {{{
 
 " plugin:terryma/vim-expand-region {{{
