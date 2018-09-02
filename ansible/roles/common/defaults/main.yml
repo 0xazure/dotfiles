@@ -25,10 +25,6 @@ python_packages:
     - virtualenvwrapper
 
 # rbenv
-rbenv_src: "{{ ruby }}/rbenv"
-rbenv_dest: "{{ home }}/.rbenv"
-rbenv_plugins_src: "{{ ruby }}/rbenv-plugins"
-rbenv_plugins_dest: "{{ rbenv_dest }}/plugins"
 default_gems_src: "{{ ruby }}/default-gems"
 default_gems_dest: "{{ rbenv_dest }}/default-gems"
 

@@ -19,6 +19,9 @@ homebrew_brews:
   - name: pyenv
   - name: pyenv-virtualenvwrapper
   - name: python
+  - name: rbenv
+  - name: rbenv-communal-gems
+  - name: rbenv-default-gems
   - name: reattach-to-user-namespace
   - name: rsync
   - name: ruby
