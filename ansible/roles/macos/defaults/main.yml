@@ -10,6 +10,7 @@ homebrew_brews:
   - name: cmake
   - name: coreutils
   - name: editorconfig
+  - name: exa
   - name: git
     options: with-brewed-openssl
   - name: go
