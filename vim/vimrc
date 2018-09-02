@@ -371,7 +371,7 @@ vmap k gk
 nnoremap ; :
 
 " Better personal leader
-let mapleader = ","
+let mapleader = "\<space>"
 
 " Leader commands {{{
 " Clear highlighting from last search
