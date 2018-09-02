@@ -22,3 +22,7 @@ Desktop.ini
 
 # vim
 .netrwhist
+
+# nodejs
+node_modules/
+
