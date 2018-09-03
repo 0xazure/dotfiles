@@ -14,6 +14,9 @@ Plug 'amix/open_file_under_cursor.vim'
 " Show git diff in gutter
 Plug 'airblade/vim-gitgutter'
 
+" Change the working directory to the project root
+Plug 'airblade/vim-rooter'
+
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 
