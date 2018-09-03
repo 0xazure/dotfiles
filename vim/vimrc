@@ -78,10 +78,6 @@ Plug 'sheerun/vim-polyglot'
 
 " Javascript linting with sindresorhus/xo
 Plug 'sindresorhus/vim-xo'
-
-" Add closing end* to ruby,viml,bash,vb,cpp,lua
-Plug 'tpope/vim-endwise'
-
 " }}}
 
 call plug#end()
