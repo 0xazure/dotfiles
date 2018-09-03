@@ -20,17 +20,19 @@ Plug 'airblade/vim-rooter'
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 
-" Fuzzy everything finder
-Plug 'ctrlpvim/ctrlp.vim'
-
 " EditorConfig plugin
 Plug 'editorconfig/editorconfig-vim'
 
+if executable('fzf')
+  " Fuzzy finder
+  Plug '/usr/local/opt/fzf'
+
+  " Vim bindings to fzf
+  Plug 'junegunn/fzf.vim'
+endif
+
 " Front-end tag completion
 Plug 'mattn/emmet-vim'
-
-" Search tool frontend for vim
-Plug 'mileszs/ack.vim'
 
 " Visually select increasingly larger regions of text
 Plug 'terryma/vim-expand-region'
@@ -198,39 +200,9 @@ endif
 let g:tmux_navigator_save_on_switch = 1
 " }}}
 
-" plugin:ctrlpvim/ctrlp.vim {{{
-if executable('rg')
-    " No max file limit
-    let g:ctrlp_max_files = 0
-
-    " Search from current directory instead of project root
-    let g:ctrlp_working_path_mode = 0
-
-    " rg is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
-
-    " Use rg for file searching
-    let g:ctrlp_user_command = 'rg %s --vimgrep --no-heading --hidden --smart-case'
-
-" Otherwise use built-in CtrlP settings
-else
-    " Show hidden files by default
-    let g:ctrlp_show_hidden = 1
-
-    " Ignore untracked files
-    let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-    " Set custom ignore rules
-    let g:ctrlp_custom_ignore = {
-      \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-      \ }
-endif
-" }}}
-
-" plugin:mileszs/ack.vim {{{
-if executable('rg')
-  let g:ackprg = 'rg --vimgrep --no-heading'
-endif
+" plugin:junegunn/fzf.vim {{{
+" Set fzf window height
+let g:fzf_layout = { 'down': '~20%' }
 " }}}
 
 " plugin:racer-rust/vim-racer {{{
@@ -262,11 +234,6 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 " plugin:vim-airline/vim-airline {{{
 " Fix vim-airline not appearing
 set laststatus=2
-
-" Enable list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Show buffer index
 let g:airline#extensions#tabline#buffer_idx_mode = 1
@@ -362,6 +329,11 @@ nnoremap <leader><leader> <c-^>
 " }}}
 
 " Plugin Keybindings {{{
+
+" plugin:junegunn/fzf.vim {{{
+map <C-p> :Files<CR>
+nmap <leader>b :Buffers<CR>
+" }}}
 
 " plugin:terryma/vim-expand-region {{{
 vmap v <Plug>(expand_region_expand)
