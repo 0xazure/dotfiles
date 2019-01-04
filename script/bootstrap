@@ -57,22 +57,6 @@ then
     _check_status $?
   fi
 
-  if _is_missing python2
-  then
-    _write_out "Python2 is not installed, installing..."
-    _brew_install "python@2"
-    _check_status $?
-    pip install --upgrade pip setuptools
-    _check_status $?
-  fi
-
-  if _is_missing ansible
-  then
-    _write_out "Ansible is not installed, installing..."
-    pip install ansible
-    _check_status $?
-  fi
-
   _write_out "Dependencies installed.  All done"
 else
   printf "This is an unsupported OS identified as $OS.\n"
