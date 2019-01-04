@@ -1,1 +1,32 @@
-../ansible/roles/common/templates/gitconfig.j2
+[user]
+	name = 0xazure
+	email = stuart.crust@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[include]
+	path = ~/.gitconfig.local
+[push]
+	default = upstream
+[credential]
+	helper = GIT_CREDENTIAL_HELPER
+[alias]
+	branches = branch -a
+	remotes = remote -v
+	stashes = stash list
+	tags = tag
+	pr = "!f() { git fetch $1 pull/$2/head:pr/$2 && git checkout pr/$2; }; f"
+	fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+[color]
+	ui = 1
+[pull]
+	rebase = preserve
+[rerere]
+	enabled = true
+	autoupdate = true
+[diff]
+	compactionHeuristic = true
+[submodule]
+	fetchJobs = 4
+[merge]
+	conflictstyle = diff3

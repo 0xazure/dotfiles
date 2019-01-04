@@ -50,11 +50,12 @@
     - git
     - backup
 
-- name: git | generate .gitconfig
-  template: >
+- name: git | link .gitconfig
+  file: >
     src="{{ gitconfig_src }}"
     dest="{{ gitconfig_dest }}"
+    state=link
     force=no
   tags:
     - git
-    - copy
+    - link

@@ -3,7 +3,7 @@
 # git
 gitignore_global_src: "{{ dotfiles_dir }}/git/.gitignore_global"
 gitignore_global_dest: "{{ home }}/.gitignore_global"
-gitconfig_src: "gitconfig.j2"
+gitconfig_src: "{{ dotfile_dir }}/git/.gitconfig"
 gitconfig_dest: "{{ home }}/.gitconfig"
 
 # npm
