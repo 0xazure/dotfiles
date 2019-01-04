@@ -6,10 +6,6 @@ gitignore_global_dest: "{{ home }}/.gitignore_global"
 gitconfig_src: "{{ dotfile_dir }}/git/.gitconfig"
 gitconfig_dest: "{{ home }}/.gitconfig"
 
-# npm
-npmrc_src: "npmrc.j2"
-npmrc_dest: "{{ home }}/.npmrc"
-
 # pyenv
 pyenv: "{{ home }}/.pyenv"
 

@@ -1,7 +1,6 @@
 ---
 
 - include: git.yml
-- include: nodejs.yml
 - include: python.yml
 - include: ruby.yml
 - include: rust.yml
