@@ -60,7 +60,7 @@ then
   if _is_missing python2
   then
     _write_out "Python2 is not installed, installing..."
-    _brew_install "python"
+    _brew_install "python@2"
     _check_status $?
     pip install --upgrade pip setuptools
     _check_status $?
