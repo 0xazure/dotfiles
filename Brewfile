@@ -81,7 +81,6 @@ brew "heroku/brew/heroku"
 #  | |__| (_| \__ \   <\__ \
 #   \____\__,_|___/_|\_\___/
 
-# Homebrew casks
 cask "alfred"
 cask "android-file-transfer"
 cask "android-studio"
