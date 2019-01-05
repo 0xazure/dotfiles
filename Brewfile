@@ -13,7 +13,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/dupes"
 tap "homebrew/services"
 
 #   _  __ 
