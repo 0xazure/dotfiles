@@ -68,8 +68,6 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Dynamic analysis tools (memory, debug, profiling)
-brew "valgrind"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Command line utility to live-reload your application.
