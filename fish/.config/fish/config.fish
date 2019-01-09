@@ -24,6 +24,5 @@ if status --is-interactive
 		abbr --add la ls -la
 	end
 
-	set --export PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin
-	set --export PATH /Users/azure/.cargo/bin $PATH
+	set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
 end
