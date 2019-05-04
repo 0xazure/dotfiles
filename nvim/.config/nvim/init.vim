@@ -4,4 +4,4 @@ let &packpath = &runtimepath
 " always use the clipboard instead of nvim registers
 set clipboard+=unnamedplus
 
-source ~/.vim/vimrc
+source ~/.vimrc
