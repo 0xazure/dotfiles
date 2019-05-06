@@ -40,16 +40,12 @@ brew "fzf"
 brew "gdb"
 # Distributed revision control system
 brew "git", args: ["with-openssl"]
-# Command-line interface for SQLite
-brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
-# Object-relational database system
-brew "postgresql", restart_service: true
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
