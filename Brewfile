@@ -83,7 +83,6 @@ brew "heroku/brew/heroku"
 
 cask "alfred"
 cask "android-file-transfer"
-cask "android-studio"
 cask "dash"
 cask "discord"
 cask "disk-inventory-x"
