@@ -39,7 +39,7 @@ brew "fzf"
 # GNU debugger
 brew "gdb"
 # Distributed revision control system
-brew "git", args: ["with-openssl"]
+brew "git"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Ambitious Vim-fork focused on extensibility and agility
