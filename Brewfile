@@ -26,6 +26,8 @@ tap "homebrew/services"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Tool for managing macOS dock items
+brew "dockutil"
 # Maintain consistent coding style between multiple editors
 brew "editorconfig"
 # Modern replacement for 'ls'
