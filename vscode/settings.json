@@ -56,5 +56,6 @@
                 "k"
             ]
         }
-    ]
+    ],
+    "workbench.tree.renderIndentGuides": "none"
 }
