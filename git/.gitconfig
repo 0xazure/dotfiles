@@ -20,7 +20,7 @@
 [color]
 	ui = 1
 [pull]
-	rebase = preserve
+	rebase = merges
 [rerere]
 	enabled = true
 	autoupdate = true
