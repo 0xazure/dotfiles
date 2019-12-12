@@ -4,6 +4,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
+	pager = delta --dark
 [include]
 	path = ~/.gitconfig.local
 [push]

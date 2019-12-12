@@ -42,6 +42,8 @@ brew "fzf"
 brew "gdb"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for `git`
+brew "git-delta"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Ambitious Vim-fork focused on extensibility and agility
