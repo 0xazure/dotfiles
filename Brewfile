@@ -7,7 +7,6 @@
 
 tap "0xazure/tap"
 tap "devlocker/tap"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -68,8 +67,6 @@ brew "tmux"
 brew "tree"
 # Command line utility to live-reload your application.
 brew "devlocker/tap/tychus"
-# Everything you need to get started with Heroku
-brew "heroku/brew/heroku"
 
 #    ____          _
 #   / ___|__ _ ___| | _____
