@@ -66,8 +66,6 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Vi 'workalike' with many additional features
-brew "vim"
 # Command line utility to live-reload your application.
 brew "devlocker/tap/tychus"
 # Everything you need to get started with Heroku

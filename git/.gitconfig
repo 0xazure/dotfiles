@@ -3,7 +3,7 @@
 	email = stuart.crust@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = vim
+	editor = nvim
 	pager = delta --dark
 [include]
 	path = ~/.gitconfig.local
