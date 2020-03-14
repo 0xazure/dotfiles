@@ -47,6 +47,8 @@ brew "gdb"
 brew "git"
 # Syntax-highlighting pager for `git`
 brew "git-delta"
+# Safer, more feature-rich replacement for `git filter-branch`
+brew "git-filter-repo"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Ambitious Vim-fork focused on extensibility and agility
