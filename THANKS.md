@@ -47,5 +47,7 @@
   - [How to boost your Vim productivity](http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/)
 - Sung, Phil ([github](https://github.com/psung))
   - [Reducing merge headaches: git meets diff3](https://psung.blogspot.ca/2011/02/reducing-merge-headaches-git-meets.html)
+- Valsorda, Filippo ([github](https://github.com/FiloSottile))
+  - [whoami.filippo.io](https://github.com/FiloSottile/whoami.filippo.io)
 - Vargo, Seth ([github](https://github.com/sethvargo))
   - [Checkout a GitHub Pull Request](https://sethvargo.com/checkout-a-github-pull-request/)

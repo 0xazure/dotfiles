@@ -1,0 +1,6 @@
+Host *
+  PubkeyAuthentication no
+  IdentitiesOnly yes
+  UseRoaming no
+  AddKeysToAgent yes
+  UseKeychain yes
