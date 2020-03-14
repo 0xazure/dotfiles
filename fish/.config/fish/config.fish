@@ -25,6 +25,7 @@ if status --is-interactive
 	end
 
 	alias cat 'bat'
+  alias du 'dust'
 
 	set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
 

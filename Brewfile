@@ -29,6 +29,8 @@ brew "cmake"
 brew "coreutils"
 # Tool for managing macOS dock items
 brew "dockutil"
+# Better `du`
+brew "dust"
 # Maintain consistent coding style between multiple editors
 brew "editorconfig"
 # Modern replacement for 'ls'
