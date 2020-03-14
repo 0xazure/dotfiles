@@ -24,6 +24,8 @@ if status --is-interactive
 		abbr --add la ls -la
 	end
 
+	alias cat 'bat'
+
 	set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
 
 	starship init fish | source

@@ -21,6 +21,8 @@ tap "homebrew/services"
 #  |_|\_\___|\__, |___/
 #            |___/
 
+# Better `cat`
+brew "bat"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
