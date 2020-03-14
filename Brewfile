@@ -57,6 +57,8 @@ brew "rsync"
 brew "ruby", link: true
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
+# Cross-shell promp
+brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Simplified and community-driven man pages

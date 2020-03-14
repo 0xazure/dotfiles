@@ -25,4 +25,6 @@ if status --is-interactive
 	end
 
 	set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
+
+	starship init fish | source
 end
