@@ -67,8 +67,6 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Command line utility to live-reload your application.
-brew "devlocker/tap/tychus"
 
 #    ____          _
 #   / ___|__ _ ___| | _____
