@@ -9,8 +9,6 @@
 	path = ~/.gitconfig.local
 [push]
 	default = upstream
-[credential]
-	helper = GIT_CREDENTIAL_HELPER
 [alias]
 	branches = branch -a
 	remotes = remote -v
