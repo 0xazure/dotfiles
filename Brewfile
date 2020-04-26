@@ -6,13 +6,7 @@
 #            |_|
 
 tap "0xazure/tap"
-tap "devlocker/tap"
-tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
 
 #   _  __ 
 #  | |/ /___  __ _ ___
