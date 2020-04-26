@@ -68,36 +68,44 @@ brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 
-#    ____          _
-#   / ___|__ _ ___| | _____
-#  | |   / _` / __| |/ / __|
-#  | |__| (_| \__ \   <\__ \
-#   \____\__,_|___/_|\_\___/
+#    ____                  ____          _
+#   / ___|___  _ __ ___   / ___|__ _ ___| | _____
+#  | |   / _ \| '__/ _ \ | |   / _` / __| |/ / __|
+#  | |__| (_) | | |  __/ | |__| (_| \__ \   <\__ \
+#   \____\___/|_|  \___|  \____\__,_|___/_|\_\___/
 
 cask "alfred"
-cask "android-file-transfer"
 cask "dash"
-cask "discord"
 cask "disk-inventory-x"
 cask "docker"
-cask "dropbox"
-cask "emacs"
 cask "enpass"
 cask "firefox-developer-edition"
 cask "font-fira-code"
-cask "google-backup-and-sync"
 cask "google-chrome"
-cask "imageoptim"
 cask "iterm2"
-cask "jetbrains-toolbox"
 cask "postman"
-cask "skype"
 cask "sourcetree"
 cask "spectacle"
-cask "spotify"
-cask "steam"
-cask "syncthing-app"
-cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
-cask "whatsapp"
+
+#    ___        _   _                   _    ____          _
+#   / _ \ _ __ | |_(_) ___  _ __   __ _| |  / ___|__ _ ___| | _____
+#  | | | | '_ \| __| |/ _ \| '_ \ / _` | | | |   / _` / __| |/ / __|
+#  | |_| | |_) | |_| | (_) | | | | (_| | | | |__| (_| \__ \   <\__ \
+#   \___/| .__/ \__|_|\___/|_| |_|\__,_|_|  \____\__,_|___/_|\_\___/
+#        |_|
+
+# cask "android-file-transfer"
+# cask "discord"
+# cask "dropbox"
+# cask "emacs"
+# cask "google-backup-and-sync"
+# cask "imageoptim"
+# cask "jetbrains-toolbox"
+# cask "skype"
+# cask "spotify"
+# cask "steam"
+# cask "syncthing-app"
+# cask "virtualbox"
+# cask "whatsapp"
