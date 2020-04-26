@@ -2,7 +2,7 @@
 
 There are many collections of `.dotfiles` around; these are mine.
 
-See something that coule be improved?  Open [an issue](/issues/new) or
+See something that could be improved?  Open [an issue](/issues/new) or
 better yet, [submit a pull request](/compare)!
 
 Disclaimer:
@@ -13,7 +13,7 @@ held responsible for any mishaps or broken environments**.
 ## Installation
 
 My primary work machine is a Macbook Pro running OS X, so everything
-is configured for that envrionment.  Some things may still work on
+is configured for that environment.  Some things may still work on
 other platforms, but any instructions are written with the assumption
 that these `.dotfiles` are being installed on an OS X machine.
 
