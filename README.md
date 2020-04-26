@@ -42,16 +42,6 @@ Execute the following:
 $ ./script/bootstrap
 ```
 
-Once the dependencies have been installed, set up the `.dotfiles` with:
-
-```sh
-$ ./script/install
-```
-
-This will symlink the appropriate files from the `.dotfiles` into
-your `$HOME` directory, as well as perform some setup for the various
-tools and applications included.
-
 ## Thanks
 
 See [THANKS.md](./THANKS.md) for references and acknowledgements.
