@@ -1,61 +1,39 @@
 {
-    "telemetry.enableTelemetry": false,
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.rulers": [
-        74,
-        80,
-        120
-    ],
-    "editor.fontSize": 14,
-    "editor.renderWhitespace": "boundary",
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 120,
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "C_Cpp.clang_format_fallbackStyle": "Google",
-    "files.insertFinalNewline": true,
-    "vim.useSystemClipboard": true,
-    "editor.formatOnSave": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        }
-    ],
-    "workbench.tree.renderIndentGuides": "none"
+  "telemetry.enableTelemetry": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.rulers": [74, 80, 120],
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "files.insertFinalNewline": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Tomorrow Night",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.clang_format_fallbackStyle": "Google"
 }
