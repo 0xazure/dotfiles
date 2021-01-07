@@ -16,6 +16,7 @@ nhoizey.gremlins
 rust-lang.rust
 samverschueren.linter-xo
 serayuzgur.crates
+timonwong.shellcheck
 usernamehw.errorlens
 vscodevim.vim
 yzhang.markdown-all-in-one
