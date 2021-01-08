@@ -7,11 +7,6 @@ fish/.config/fish/conf.d
 fish/.config/fish/fish_variables
 fish/.config/fish/fishd*
 
-fish/.config/fish/functions/*
-!fish/.config/fish/functions/fish_greeting.fish
-!fish/.config/fish/functions/t.fish
-!fish/.config/fish/functions/take.fish
-
 # Sublime Text
 sublime/User/**/*.tmTheme
 
