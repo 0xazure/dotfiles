@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd)
+set -e
 
 OS="$(uname -s)"
 
@@ -10,13 +9,13 @@ _is_missing () {
 }
 
 _write_out () {
-  local in_len=${#1}
-  local len=$((in_len + 4))
+  local input_len=${#1}
+  local len=$((input_len + 4))
 
   printf "\n"
-  printf '%*s' "$len" | tr ' ' "="
-  printf "\n‖ $1 ‖\n"
-  printf '%*s' "$len" | tr ' ' "="
+  printf '%*s' "$len" '' | tr ' ' "="
+  printf "\n‖ %s ‖\n" "$1"
+  printf '%*s' "$len" '' | tr ' ' "="
   printf "\n\n"
 }
 
@@ -33,14 +32,14 @@ _brew_install () {
 _check_status () {
   if [[ $1 -ne 0 ]]
   then
-    exit $1
+    exit "$1"
   fi
 }
 
 # Ensure we have necessary dependencies
 if [[ $OS == "Darwin" ]]
 then
-  if _is_missing brew
+  if _is_missing "brew"
   then
     _write_out "Homebrew is not installed, installing..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -50,15 +49,14 @@ then
   # Set $PATH to use brewed versions instead of system ones
   export PATH=/usr/local/bin:$PATH
 
-  if _is_missing git
+  if _is_missing "git"
   then
     _write_out "git is not installed, installing..."
     _brew_install "git"
     _check_status $?
   fi
 
-  _write_out "Dependencies installed.  All done"
+  printf "Dependencies installed. All done.\n"
 else
-  printf "This is an unsupported OS identified as $OS.\n"
+  printf "This is an unsupported OS identified as %s.\n" "$OS"
 fi
-
