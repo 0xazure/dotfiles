@@ -47,6 +47,8 @@ brew "reattach-to-user-namespace"
 brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Cross-shell prompt
