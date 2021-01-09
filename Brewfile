@@ -21,8 +21,6 @@ brew "bat"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Tool for managing macOS dock items
-brew "dockutil"
 # Better `du`
 brew "dust"
 # Maintain consistent coding style between multiple editors
@@ -35,16 +33,12 @@ brew "fdupes"
 brew "fish"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU debugger
-brew "gdb"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for `git`
 brew "git-delta"
 # Safer, more feature-rich replacement for `git filter-branch`
 brew "git-filter-repo"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Reattach process (e.g., tmux) to background
@@ -53,11 +47,9 @@ brew "reattach-to-user-namespace"
 brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
-# Powerful, clean, object-oriented scripting language
-brew "ruby", link: true
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
-# Cross-shell promp
+# Cross-shell prompt
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
@@ -75,7 +67,6 @@ brew "tree"
 #   \____\___/|_|  \___|  \____\__,_|___/_|\_\___/
 
 cask "alfred"
-cask "dash"
 cask "disk-inventory-x"
 cask "docker"
 cask "enpass"
@@ -108,4 +99,3 @@ cask "vlc"
 # cask "steam"
 # cask "syncthing-app"
 # cask "virtualbox"
-# cask "whatsapp"
