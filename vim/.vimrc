@@ -4,6 +4,74 @@
 " 0xazure's .vimrc
 "
 
+" Plugin Configuration {{{
+
+" plugin:airblade/vim-gitgutter {{{
+" Always show sign column
+if exists('&signcolumn')  " Vim >7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
+" }}}
+
+" plugin:christoomey/vim-tmux-navigator {{{
+" Execute `update` on leaving vim for a tmux pane
+let g:tmux_navigator_save_on_switch = 1
+" }}}
+
+" plugin:junegunn/fzf.vim {{{
+" Set fzf window height
+let g:fzf_layout = { 'down': '~20%' }
+" }}}
+
+" plugin:racer-rust/vim-racer {{{
+" Show fuction signatures in autocompletion
+let g:racer_experimental_completer = 1
+" }}}
+
+" plugin:rust-lang/rust.vim {{{
+" Automatically format rust files on save (if `rustfmt` is available)
+let g:rustfmt_autosave = 1
+" }}}
+
+" plugin:sheerun/vim-polyglot {{{
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+let g:polyglot_disabled = ['rust']
+" }}}
+
+" plugin:shougo/deoplete.nvim {{{
+let g:deoplete#enable_at_startup = 1
+" }}}
+
+" plugin:vim-airline/vim-airline {{{
+" Fix vim-airline not appearing
+set laststatus=2
+
+" Show buffer index
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+" Use algo optimized for tabs for indentation and spaces for alignment
+" See :help airline-whitespace
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
+" }}}
+
+" plugin:vim-syntastic/syntastic {{{
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Configure symbols & colours
+let g:syntastic_error_symbol = '✘'
+highlight SyntasticErrorSign ctermbg=none ctermfg=red
+let g:syntastic_warning_symbol = "▲"
+highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
+" }}}
+
+" }}}
+
 " Plugins (vim-plug.vim) {{{
 call plug#begin('~/.vim/plugged')
 
@@ -182,74 +250,6 @@ set t_Co=256
 set background=dark
 " Set colour scheme
 silent! colorscheme Tomorrow-Night
-" }}}
-
-" Plugin Configuration {{{
-
-" plugin:airblade/vim-gitgutter {{{
-" Always show sign column
-if exists('&signcolumn')  " Vim >7.4.2201
-  set signcolumn=yes
-else
-  let g:gitgutter_sign_column_always = 1
-endif
-" }}}
-
-" plugin:christoomey/vim-tmux-navigator {{{
-" Execute `update` on leaving vim for a tmux pane
-let g:tmux_navigator_save_on_switch = 1
-" }}}
-
-" plugin:junegunn/fzf.vim {{{
-" Set fzf window height
-let g:fzf_layout = { 'down': '~20%' }
-" }}}
-
-" plugin:racer-rust/vim-racer {{{
-" Show fuction signatures in autocompletion
-let g:racer_experimental_completer = 1
-" }}}
-
-" plugin:rust-lang/rust.vim {{{
-" Automatically format rust files on save (if `rustfmt` is available)
-let g:rustfmt_autosave = 1
-" }}}
-
-" plugin:sheerun/vim-polyglot {{{
-let g:vim_markdown_conceal = 0
-let g:vim_markdown_conceal_code_blocks = 0
-let g:polyglot_disabled = ['rust']
-" }}}
-
-" plugin:shougo/deoplete.nvim {{{
-let g:deoplete#enable_at_startup = 1
-" }}}
-
-" plugin:vim-airline/vim-airline {{{
-" Fix vim-airline not appearing
-set laststatus=2
-
-" Show buffer index
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-
-" Use algo optimized for tabs for indentation and spaces for alignment
-" See :help airline-whitespace
-let g:airline#extensions#whitespace#mixed_indent_algo = 2
-" }}}
-
-" plugin:vim-syntastic/syntastic {{{
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Configure symbols & colours
-let g:syntastic_error_symbol = '✘'
-highlight SyntasticErrorSign ctermbg=none ctermfg=red
-let g:syntastic_warning_symbol = "▲"
-highlight SyntasticWarningSign ctermbg=none ctermfg=yellow
-" }}}
-
 " }}}
 
 " File Encoding {{{
