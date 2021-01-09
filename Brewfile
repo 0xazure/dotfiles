@@ -61,6 +61,8 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 
 #    ____                  ____          _
 #   / ___|___  _ __ ___   / ___|__ _ ___| | _____
