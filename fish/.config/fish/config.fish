@@ -29,5 +29,8 @@ if status --is-interactive
 
 	set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
 
+	set --export EDITOR nvim
+	set --export VISUAL nvim
+
 	starship init fish | source
 end
