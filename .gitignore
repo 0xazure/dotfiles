@@ -7,6 +7,8 @@ fish/.config/fish/conf.d
 fish/.config/fish/fish_variables
 fish/.config/fish/fishd*
 
+fish/.config/fish/local.fish
+
 # Sublime Text
 sublime/User/**/*.tmTheme
 

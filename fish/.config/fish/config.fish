@@ -32,5 +32,10 @@ if status --is-interactive
     set --export EDITOR nvim
     set --export VISUAL nvim
 
+    set --local FISH_CONFIG_LOCAL (dirname (status -f))"/local.fish"
+    if test -f $FISH_CONFIG_LOCAL
+        source $FISH_CONFIG_LOCAL
+    end
+
     starship init fish | source
 end
