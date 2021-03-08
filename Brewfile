@@ -15,6 +15,8 @@ tap "homebrew/cask-fonts"
 #  |_|\_\___|\__, |___/
 #            |___/
 
+# Programming language version manager
+brew "asdf"
 # Better `cat`
 brew "bat"
 # Cross-platform make

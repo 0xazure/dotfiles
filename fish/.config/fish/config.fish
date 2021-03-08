@@ -37,5 +37,10 @@ if status --is-interactive
         source $FISH_CONFIG_LOCAL
     end
 
+    set --local ASDF_PATH /usr/local/opt/asdf/asdf.fish
+    if test -f $ASDF_PATH
+        source $ASDF_PATH
+    end
+
     starship init fish | source
 end
