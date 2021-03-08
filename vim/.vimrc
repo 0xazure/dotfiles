@@ -45,6 +45,14 @@ let g:polyglot_disabled = ['rust']
 let g:deoplete#enable_at_startup = 1
 " }}}
 
+" plugin takac/vim-hardtime {{{
+let g:hardtime_default_on = 1
+let g:hardtime_ignore_quickfix = 1
+let g:hardtime_maxcount = 3
+let g:hardtime_timeout = 1000
+let g:hardtime_showmsg = 1
+" }}}
+
 " plugin:vim-airline/vim-airline {{{
 " Fix vim-airline not appearing
 set laststatus=2
@@ -101,6 +109,9 @@ endif
 
 " Front-end tag completion
 Plug 'mattn/emmet-vim'
+
+" Stop repeating the basic vim movement keys to learn better motions
+Plug 'takac/vim-hardtime'
 
 " Visually select increasingly larger regions of text
 Plug 'terryma/vim-expand-region'
