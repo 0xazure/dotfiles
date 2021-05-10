@@ -26,8 +26,9 @@ if status --is-interactive
 
     alias cat 'bat'
     alias du 'dust'
+    alias isvg 'rsvg-convert | icat'
 
-    set --export PATH /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
+    set --export PATH "$HOME/.dotfiles/bin" /usr/local/bin ~/.cargo/bin /usr/bin /bin /usr/sbin /sbin
 
     set --export EDITOR nvim
     set --export VISUAL nvim

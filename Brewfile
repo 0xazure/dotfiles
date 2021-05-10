@@ -41,6 +41,8 @@ brew "git"
 brew "git-delta"
 # Safer, more feature-rich replacement for `git filter-branch`
 brew "git-filter-repo"
+# Graph visualization software
+brew "graphviz"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Reattach process (e.g., tmux) to background

@@ -22,6 +22,8 @@
   - [Dotfiles are Meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
 - Jaouen, Daniel ([github](https://github.com/danieljaouen))
   - [How I Fully Automated OS X Provisioning With Ansible](http://il.luminat.us/blog/2014/04/19/how-i-fully-automated-os-x-with-ansible/)
+- Kate ([github](https://github.com/katef) [twitter](https://twitter.com/thingskatedid))
+  - 🧵 on [displaying stuff in a terminal](https://twitter.com/thingskatedid/status/1316074032379248640)
 - Kharkharov, Gadzhi ([github](https://github.com/kkga))
   - [SpaceGray](https://github.com/kkga/spacegray) theme for SublimeText
 - Klein, Ben ([github](https://github.com/fifthposition))
